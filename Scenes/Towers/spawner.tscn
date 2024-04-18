@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://8gnoeau7ipr7"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/spawners.gd" id="1_xoe2p"]
+[ext_resource type="Script" path="res://Scenes/Components/HitboxCopmponent.gd" id="2_6e6yw"]
+[ext_resource type="Script" path="res://Scenes/Components/HealthComponent.gd" id="3_gvc3t"]
+
+[sub_resource type="Gradient" id="Gradient_272o8"]
+colors = PackedColorArray(0, 0.556863, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_10us0"]
+gradient = SubResource("Gradient_272o8")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n5owm"]
+size = Vector2(50, 50)
+
+[node name="spawner1" type="Node2D"]
+script = ExtResource("1_xoe2p")
+
+[node name="tSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.785, 0.785)
+texture = SubResource("GradientTexture2D_10us0")
+
+[node name="sP" type="Control" parent="tSprite"]
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = -0.385
+anchor_right = 0.5
+anchor_bottom = -0.385
+offset_left = 49.5287
+offset_top = 24.64
+offset_right = 51.5287
+offset_bottom = 24.64
+scale = Vector2(0.717455, -1.42544)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -11.0
+offset_right = 20.0
+offset_bottom = 9.0
+text = "sp1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HitboxComponent" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 6
+collision_mask = 0
+script = ExtResource("2_6e6yw")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+shape = SubResource("RectangleShape2D_n5owm")
+
+[node name="HealthComponent" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_gvc3t")
+
+[node name="spawnTimer" type="Timer" parent="."]
+wait_time = 8.0
+
+[node name="initialSpawnTimer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true
+autostart = true
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="timeout" from="spawnTimer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="timeout" from="initialSpawnTimer" to="." method="_on_initial_spawn_timer_timeout"]

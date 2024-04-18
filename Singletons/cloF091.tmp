@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c54f8mvr042xv"]
+
+[ext_resource type="Script" path="res://clock.gd" id="1_ko5dl"]
+[ext_resource type="FontFile" uid="uid://ctqua67n08lmd" path="res://Resources/Fonts/ProtestStrike-Regular.ttf" id="2_q5bt1"]
+
+[node name="Clock" type="Node"]
+script = ExtResource("1_ko5dl")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 551.0
+offset_top = 7.0
+offset_right = 591.0
+offset_bottom = 27.0
+scale = Vector2(1.33816, 0.956212)
+theme_override_fonts/font = ExtResource("2_q5bt1")
+theme_override_font_sizes/font_size = 50
+text = "00:00"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

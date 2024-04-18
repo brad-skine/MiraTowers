@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://m8oif6vgxa3n"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/traps.gd" id="1_ku5pr"]
+[ext_resource type="Texture2D" uid="uid://braevo02p1521" path="res://Assets/Traps/spikes0.png" id="1_qbrn2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n024p"]
+size = Vector2(57, 58)
+
+[node name="SpikeTrap" type="Area2D"]
+position = Vector2(90, 55)
+collision_layer = 8
+collision_mask = 8
+monitorable = false
+script = ExtResource("1_ku5pr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 1.094)
+shape = SubResource("RectangleShape2D_n024p")
+
+[node name="Spikes0" type="Sprite2D" parent="."]
+texture = ExtResource("1_qbrn2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -18.0
+offset_top = -8.0
+offset_right = 22.0
+offset_bottom = 12.0
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]

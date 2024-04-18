@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://dpomun4cbpysd"]
+
+[ext_resource type="Script" path="res://Scenes/MainScenes/gameplay.gd" id="1_mi42g"]
+[ext_resource type="PackedScene" uid="uid://cx3lrhhsism6j" path="res://Scenes/Maps/map_2.tscn" id="1_ttcop"]
+[ext_resource type="PackedScene" uid="uid://1atx3s73r4gt" path="res://Scenes/UI/gameplay_menu.tscn" id="2_brhmh"]
+[ext_resource type="PackedScene" uid="uid://2waa48spw4cl" path="res://Scenes/Base/base.tscn" id="3_dg0in"]
+[ext_resource type="PackedScene" uid="uid://dbk7utikd7a01" path="res://Scenes/Creatures/firstCreature.tscn" id="5_410au"]
+[ext_resource type="PackedScene" uid="uid://wgi27q5eyhxu" path="res://Scenes/Creatures/meleeChar.tscn" id="6_siakv"]
+
+[node name="Gameplay" type="Node2D"]
+script = ExtResource("1_mi42g")
+metadata/_edit_vertical_guides_ = [305.0]
+
+[node name="map_2" parent="." instance=ExtResource("1_ttcop")]
+position = Vector2(2, 0)
+
+[node name="GameplayMenu" parent="." instance=ExtResource("2_brhmh")]
+offset_left = 11.0
+offset_top = -1.0
+offset_right = 298.0
+offset_bottom = 719.0
+
+[node name="Base" parent="." instance=ExtResource("3_dg0in")]
+position = Vector2(468, 360)
+
+[node name="Base2" parent="." instance=ExtResource("3_dg0in")]
+position = Vector2(1119, 359)
+
+[node name="first_creature_player" parent="." instance=ExtResource("5_410au")]
+position = Vector2(849, 218)
+
+[node name="meleCharacter" parent="." node_paths=PackedStringArray("target") instance=ExtResource("6_siakv")]
+position = Vector2(521, 171)
+scale = Vector2(0.844476, 0.893428)
+target = NodePath("../Base2")

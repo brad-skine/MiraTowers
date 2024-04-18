@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://b48n202vc50ph"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/tower1.gd" id="1_75sjv"]
+[ext_resource type="Texture2D" uid="uid://cthdntsiffr02" path="res://Assets/Towers/tankStuff/tankBody_sand.png" id="1_vd7wc"]
+[ext_resource type="Texture2D" uid="uid://btf8tuskb6el7" path="res://Assets/Towers/tankStuff/tankSand_barrel2.png" id="2_apgfv"]
+
+[node name="tower" type="Node2D"]
+z_index = 2
+position = Vector2(113, 60)
+rotation = -1.5708
+script = ExtResource("1_75sjv")
+health = null
+fire_rate = null
+bullet_speed = null
+
+[node name="sP" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = -0.385
+anchor_right = 0.5
+anchor_bottom = -0.385
+offset_left = 49.0
+offset_top = -0.000236511
+offset_right = 49.0
+offset_bottom = -0.000236511
+
+[node name="tSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_vd7wc")
+
+[node name="bSprite" type="Sprite2D" parent="tSprite"]
+position = Vector2(0, 26)
+rotation = 3.14159
+texture = ExtResource("2_apgfv")
+
+[node name="cd" type="Timer" parent="."]
+wait_time = 0.86
+autostart = true
+
+[connection signal="timeout" from="cd" to="." method="_on_cd_timeout"]

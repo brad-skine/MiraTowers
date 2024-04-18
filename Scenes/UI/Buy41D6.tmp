@@ -1,0 +1,122 @@
+[gd_scene load_steps=9 format=3 uid="uid://h0if3m6ftaq4"]
+
+[ext_resource type="Script" path="res://Scripts/buy_menu.gd" id="1_1386p"]
+[ext_resource type="FontFile" uid="uid://ctqua67n08lmd" path="res://Resources/Fonts/ProtestStrike-Regular.ttf" id="1_vlbcb"]
+
+[sub_resource type="Gradient" id="Gradient_wm2tq"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bk5iu"]
+gradient = SubResource("Gradient_wm2tq")
+
+[sub_resource type="Gradient" id="Gradient_12rw8"]
+colors = PackedColorArray(0.830468, 0.889476, 1, 1, 0.466626, 0.250812, 0.404304, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q18rc"]
+gradient = SubResource("Gradient_12rw8")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0.00460829, 0.078341)
+
+[sub_resource type="Gradient" id="Gradient_b2ipb"]
+colors = PackedColorArray(0.882012, 0.308787, 0.61641, 1, 0, 0, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8ojfd"]
+gradient = SubResource("Gradient_b2ipb")
+
+[node name="BuyMenu" type="Control"]
+custom_minimum_size = Vector2(319, 720)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1386p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(319, 720)
+layout_mode = 0
+offset_right = 319.0
+offset_bottom = 720.0
+texture = SubResource("GradientTexture2D_bk5iu")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="NewGame" type="TextureButton" parent="TextureRect/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(290, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_q18rc")
+texture_pressed = SubResource("GradientTexture2D_8ojfd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureRect/MarginContainer/VBoxContainer/NewGame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_vlbcb")
+theme_override_font_sizes/font_size = 45
+text = "Tower1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="TextureRect/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect/MarginContainer/VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Info about first tower what does it do, I guess you will find out if you buy it. It is cheap enough"
+
+[node name="Purchace Button" type="TextureButton" parent="TextureRect/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(290, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_q18rc")
+texture_pressed = SubResource("GradientTexture2D_8ojfd")
+stretch_mode = 0
+
+[node name="Purchace lebal" type="Label" parent="TextureRect/MarginContainer/VBoxContainer/Purchace Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_vlbcb")
+theme_override_font_sizes/font_size = 45
+text = "Purchase"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TextureRect/MarginContainer/VBoxContainer/Purchace Button" to="." method="_on_purchace_button_pressed"]

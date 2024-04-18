@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://2waa48spw4cl"]
+
+[sub_resource type="Gradient" id="Gradient_3y0rw"]
+colors = PackedColorArray(1, 1, 1, 1, 0.903598, 0.903598, 0.903598, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_thsgw"]
+gradient = SubResource("Gradient_3y0rw")
+
+[sub_resource type="GDScript" id="GDScript_5qwcr"]
+script/source = "extends Sprite2D
+
+export var health = 0
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+"
+
+[node name="Base" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = SubResource("GradientTexture2D_thsgw")
+script = SubResource("GDScript_5qwcr")
+
+[node name="CheckButton" type="CheckButton" parent="Sprite2D"]
+offset_left = -3.5
+offset_top = -29.6
+offset_right = 40.5
+offset_bottom = -5.6
+scale = Vector2(0.9, 0.984)

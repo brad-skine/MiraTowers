@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://wgi27q5eyhxu"]
+
+[ext_resource type="Script" path="res://Scenes/Creatures/meleeChar.gd" id="1_wb7x1"]
+[ext_resource type="Texture2D" uid="uid://d11o58w2w2kpu" path="res://icon.svg" id="2_fmfgr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wexy4"]
+size = Vector2(52, 52)
+
+[node name="meleCharacter" type="CharacterBody2D"]
+modulate = Color(0.819608, 0.513726, 0.0705882, 1)
+position = Vector2(154, 79)
+collision_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_wb7x1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.545098, 0.364706, 0.898039, 1)
+position = Vector2(2, 0)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_fmfgr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_wexy4")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 119.0
+path_max_distance = 500.0
+path_postprocessing = 1
+radius = 466.51
+debug_enabled = true
+debug_path_custom_color = Color(0.501961, 0.352941, 0.164706, 1)
+
+[node name="update_nav_timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="meleeAttackTimer" type="Timer" parent="."]
+
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
+[connection signal="timeout" from="update_nav_timer" to="." method="_on_update_nav_timer_timeout"]
+[connection signal="timeout" from="meleeAttackTimer" to="." method="_on_melee_attack_timer_timeout"]

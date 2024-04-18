@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://utfv6hl0mnco"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/proj_basic.gd" id="1_owxcs"]
+[ext_resource type="Texture2D" uid="uid://cq566a8v1qcjb" path="res://Assets/Towers/tankStuff/Projectiles/bulletBlue2_outline.png" id="1_yjgdu"]
+
+[sub_resource type="GDScript" id="GDScript_ec7aj"]
+script/source = "extends RigidBody2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	
+	var constant_force = Vector2(5, 5)
+	add_constant_force(force: constant_force, position = constant_force )
+	
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Projectile" type="Node2D"]
+position = Vector2(30, 0)
+rotation = 1.5708
+script = ExtResource("1_owxcs")
+
+[node name="blueBullet" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("1_yjgdu")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="blueBullet"]
+script = SubResource("GDScript_ec7aj")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="blueBullet/RigidBody2D"]
+polygon = PackedVector2Array(-5.99997, 8.00002, 6.00003, 7.99998, 5.99998, -6.00002, 3.99997, -8.00001, -4.00003, -7.99999, -6.00001, -4.99998)

@@ -1,0 +1,125 @@
+[gd_scene load_steps=9 format=3 uid="uid://bogloghkksrqt"]
+
+[ext_resource type="FontFile" uid="uid://ctqua67n08lmd" path="res://Resources/Fonts/ProtestStrike-Regular.ttf" id="1_uy8fe"]
+[ext_resource type="Script" path="res://Scripts/buyMenu.gd" id="1_vnl53"]
+
+[sub_resource type="Gradient" id="Gradient_un675"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7hgeu"]
+gradient = SubResource("Gradient_un675")
+
+[sub_resource type="Gradient" id="Gradient_fy7ok"]
+colors = PackedColorArray(0.830468, 0.889476, 1, 1, 0.466626, 0.250812, 0.404304, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6oxn3"]
+gradient = SubResource("Gradient_fy7ok")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0.00460829, 0.078341)
+
+[sub_resource type="Gradient" id="Gradient_4anxp"]
+colors = PackedColorArray(0.882012, 0.308787, 0.61641, 1, 0, 0, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_chfb5"]
+gradient = SubResource("Gradient_4anxp")
+
+[node name="buyMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vnl53")
+
+[node name="bg" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(319, 720)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -961.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_7hgeu")
+
+[node name="MC" type="MarginContainer" parent="bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBC" type="VBoxContainer" parent="bg/MC"]
+layout_mode = 2
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="NewGame" type="TextureButton" parent="bg/MC/VBC"]
+custom_minimum_size = Vector2(290, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_6oxn3")
+texture_pressed = SubResource("GradientTexture2D_chfb5")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="bg/MC/VBC/NewGame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_uy8fe")
+theme_override_font_sizes/font_size = 45
+text = "Mystery??"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="bg/MC/VBC"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="bg/MC/VBC/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "This is where your upgrades will show and what they do. Increase bla de da or increase da di do"
+
+[node name="Purchace" type="TextureButton" parent="bg/MC/VBC"]
+custom_minimum_size = Vector2(290, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_6oxn3")
+texture_pressed = SubResource("GradientTexture2D_chfb5")
+stretch_mode = 0
+
+[node name="Purchase" type="Label" parent="bg/MC/VBC/Purchace"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_uy8fe")
+theme_override_font_sizes/font_size = 45
+text = "Purchase"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="bg/MC/VBC/Purchace" to="." method="_on_purchace_pressed"]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://utfv6hl0mnco"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/proj_basic.gd" id="1_owxcs"]
+[ext_resource type="Texture2D" uid="uid://cq566a8v1qcjb" path="res://Assets/Towers/tankStuff/Projectiles/bulletBlue2_outline.png" id="1_yjgdu"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+rotation = 1.5708
+script = ExtResource("1_owxcs")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 1)
+polygon = PackedVector2Array(-5.99997, 8.00002, 6.00003, 7.99998, 5.99998, -6.00002, 3.99997, -8.00001, -4.00003, -7.99999, -6.00001, -4.99998)
+disabled = true
+
+[node name="blueBullet" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("1_yjgdu")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(0, 1)
+polygon = PackedVector2Array(-5.99997, 8.00002, 6.00003, 7.99998, 5.99998, -6.00002, 3.99997, -8.00001, -4.00003, -7.99999, -6.00001, -4.99998)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

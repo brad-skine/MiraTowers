@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="spawnerStats" load_steps=3 format=3 uid="uid://dq5nb8qes8t0g"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/spawner_stats.gd" id="1_tfduu"]
+[ext_resource type="PackedScene" uid="uid://dbk7utikd7a01" path="res://Scenes/Creatures/firstCreature.tscn" id="2_uwm3f"]
+
+[resource]
+script = ExtResource("1_tfduu")
+health = 1600
+spawned_unit = ExtResource("2_uwm3f")

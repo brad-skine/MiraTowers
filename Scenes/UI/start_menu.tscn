@@ -1,0 +1,172 @@
+[gd_scene load_steps=9 format=3 uid="uid://iot4rk8872yo"]
+
+[ext_resource type="Script" path="res://Scripts/start_menu.gd" id="1_02llp"]
+[ext_resource type="FontFile" uid="uid://ctqua67n08lmd" path="res://Resources/Fonts/ProtestStrike-Regular.ttf" id="1_qgg27"]
+
+[sub_resource type="Gradient" id="Gradient_vdbq7"]
+offsets = PackedFloat32Array(0.193939, 0.981818)
+colors = PackedColorArray(0.223103, 0.223103, 0.223103, 1, 0.458405, 0.458405, 0.458405, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2mjp5"]
+gradient = SubResource("Gradient_vdbq7")
+fill_to = Vector2(0.694323, 0.0131004)
+
+[sub_resource type="Gradient" id="Gradient_7yy2v"]
+colors = PackedColorArray(0.882012, 0.308787, 0.61641, 1, 0.0196078, 0, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4gmxf"]
+gradient = SubResource("Gradient_7yy2v")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0.00460829, 0.078341)
+
+[sub_resource type="Gradient" id="Gradient_yn27w"]
+colors = PackedColorArray(0.882012, 0.308787, 0.61641, 1, 0, 0, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1fkmd"]
+gradient = SubResource("Gradient_yn27w")
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_02llp")
+
+[node name="B" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_2mjp5")
+
+[node name="MC" type="MarginContainer" parent="B"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBC" type="VBoxContainer" parent="B/MC"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="NewGame" type="TextureButton" parent="B/MC/VBC"]
+custom_minimum_size = Vector2(400, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_4gmxf")
+texture_pressed = SubResource("GradientTexture2D_1fkmd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="B/MC/VBC/NewGame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_qgg27")
+theme_override_font_sizes/font_size = 45
+text = "New Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="TextureButton" parent="B/MC/VBC"]
+custom_minimum_size = Vector2(400, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_4gmxf")
+texture_pressed = SubResource("GradientTexture2D_1fkmd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="B/MC/VBC/Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_qgg27")
+theme_override_font_sizes/font_size = 45
+text = "Settings
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Versus Custom" type="TextureButton" parent="B/MC/VBC"]
+custom_minimum_size = Vector2(400, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_4gmxf")
+texture_pressed = SubResource("GradientTexture2D_1fkmd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="B/MC/VBC/Versus Custom"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_qgg27")
+theme_override_font_sizes/font_size = 45
+text = "Versus Custom
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="B/MC/VBC"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Quit" type="TextureButton" parent="B/MC/VBC"]
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_4gmxf")
+texture_pressed = SubResource("GradientTexture2D_1fkmd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="B/MC/VBC/Quit"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.662745)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.270588)
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("1_qgg27")
+theme_override_font_sizes/font_size = 45
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="B/MC/VBC/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="B/MC/VBC/Quit" to="." method="_on_quit_pressed"]

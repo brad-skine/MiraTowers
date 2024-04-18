@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://2waa48spw4cl"]
+
+[ext_resource type="Script" path="res://Scripts/base.gd" id="1_5ck4s"]
+
+[sub_resource type="Gradient" id="Gradient_3y0rw"]
+colors = PackedColorArray(1, 1, 1, 1, 0.903598, 0.903598, 0.903598, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_thsgw"]
+gradient = SubResource("Gradient_3y0rw")
+
+[node name="Base" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = SubResource("GradientTexture2D_thsgw")
+script = ExtResource("1_5ck4s")
+
+[node name="CheckButton" type="CheckButton" parent="Sprite2D"]
+offset_left = -3.5
+offset_top = -29.6
+offset_right = 40.5
+offset_bottom = -5.6
+scale = Vector2(0.9, 0.984)

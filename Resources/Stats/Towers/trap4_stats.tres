@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="trapStats" load_steps=2 format=3 uid="uid://diw2hhuoiwgwk"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/trap_stats.gd" id="1_w7jl8"]
+
+[resource]
+script = ExtResource("1_w7jl8")
+damage = 400

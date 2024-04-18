@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="towerStats" load_steps=2 format=3 uid="uid://coahfty7pmx3a"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/towerStats.gd" id="1_we5fo"]
+
+[resource]
+script = ExtResource("1_we5fo")
+health = 100
+fire_rate = 10.0
+bullet_speed = 300
+info = {
+0: {
+"header": "Towers",
+"info": "select what tower you would like to purchase"
+},
+1: {
+"header": "Tower 1",
+"info": "tower 1 does this and that and that
+stats: 123
+stats: yep"
+},
+2: {
+"header": "Tower 2",
+"info": "tower 2 does this and that and that
+stats: 123
+stats: yep"
+},
+3: {
+"header": "Tower 3",
+"info": "?????????? 3 that
+stats: 123
+stats: yep"
+},
+4: {
+"header": "Tower 4",
+"info": "tower 4 does this and that and that
+stats: 123
+stats: yep"
+}
+}

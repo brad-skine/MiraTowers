@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxoedjv5wg488"]
+
+[ext_resource type="Script" path="res://Scenes/Towers/spawner2.gd" id="1_4efeo"]
+[ext_resource type="Script" path="res://Scenes/Components/HitboxCopmponent.gd" id="1_o5na6"]
+[ext_resource type="Script" path="res://Scenes/Components/HealthComponent.gd" id="2_hjux2"]
+
+[sub_resource type="Gradient" id="Gradient_272o8"]
+colors = PackedColorArray(0, 0.556863, 0, 1, 1, 0.537255, 0.345098, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_10us0"]
+gradient = SubResource("Gradient_272o8")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_35nbb"]
+size = Vector2(50, 50)
+
+[node name="spawner2" type="Node2D"]
+script = ExtResource("1_4efeo")
+
+[node name="tSprite" type="Sprite2D" parent="."]
+position = Vector2(0, -5.96046e-08)
+rotation = -1.5708
+scale = Vector2(0.785155, 0.785155)
+texture = SubResource("GradientTexture2D_10us0")
+
+[node name="sP" type="Control" parent="tSprite"]
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = -0.385
+anchor_right = 0.5
+anchor_bottom = -0.385
+offset_left = -18.9999
+offset_top = 35.63
+offset_right = -18.9999
+offset_bottom = 35.63
+
+[node name="Label" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -11.0
+offset_right = 20.0
+offset_bottom = 9.0
+text = "sp2
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HitboxComponent" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+script = ExtResource("1_o5na6")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+shape = SubResource("RectangleShape2D_35nbb")
+
+[node name="HealthComponent" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_hjux2")
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]

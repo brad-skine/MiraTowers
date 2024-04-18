@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="spawnerStats" load_steps=3 format=3 uid="uid://b4qsue4oy14vg"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/spawner_stats.gd" id="1_o6hxf"]
+[ext_resource type="PackedScene" uid="uid://wgi27q5eyhxu" path="res://Scenes/Creatures/meleeChar.tscn" id="2_8nk57"]
+
+[resource]
+script = ExtResource("1_o6hxf")
+health = 200
+spawned_unit = ExtResource("2_8nk57")
