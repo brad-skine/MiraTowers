@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="money_stats" load_steps=2 format=3 uid="uid://daq2dfbnwl6ks"]
+
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/$stats.gd" id="1_xopy1"]
+
+[resource]
+script = ExtResource("1_xopy1")
+health = 100
+money_per_click = 2

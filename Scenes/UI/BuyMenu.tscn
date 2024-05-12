@@ -30,13 +30,8 @@ colors = PackedColorArray(0.882012, 0.308787, 0.61641, 1, 0, 0, 1, 1)
 gradient = SubResource("Gradient_mc1ns")
 
 [node name="BuyMenu" type="Control"]
-custom_minimum_size = Vector2(319, 720)
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
 script = ExtResource("1_1386p")
 metadata/_edit_vertical_guides_ = [305.0]
 
@@ -51,9 +46,9 @@ texture = SubResource("GradientTexture2D_bk5iu")
 top_level = true
 layout_mode = 0
 offset_left = 10.0
-offset_top = 13.0
+offset_top = 69.0
 offset_right = 299.0
-offset_bottom = 77.0
+offset_bottom = 133.0
 size_flags_vertical = 0
 theme_override_constants/separation = 11
 
@@ -93,13 +88,13 @@ text = "Spawners"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="otherB" type="TextureButton" parent="TR/catsCon"]
+[node name="moneyB" type="TextureButton" parent="TR/catsCon"]
 layout_mode = 2
 size_flags_vertical = 0
 texture_normal = SubResource("GradientTexture2D_q18rc")
 texture_pressed = SubResource("GradientTexture2D_8ojfd")
 
-[node name="t3Label" type="Label" parent="TR/catsCon/otherB"]
+[node name="t3Label" type="Label" parent="TR/catsCon/moneyB"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -107,9 +102,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 15
-text = "Other"
+text = "$$
+"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="trapB" type="TextureButton" parent="TR/catsCon"]
 layout_mode = 2
@@ -135,9 +132,9 @@ visible = false
 top_level = true
 layout_mode = 2
 offset_left = 10.0
-offset_top = 13.0
+offset_top = 69.0
 offset_right = 299.0
-offset_bottom = 77.0
+offset_bottom = 133.0
 size_flags_vertical = 0
 theme_override_constants/separation = 11
 
@@ -220,9 +217,9 @@ visible = false
 top_level = true
 layout_mode = 2
 offset_left = 10.0
-offset_top = 13.0
+offset_top = 69.0
 offset_right = 299.0
-offset_bottom = 77.0
+offset_bottom = 133.0
 size_flags_vertical = 0
 theme_override_constants/separation = 11
 
@@ -307,14 +304,106 @@ vertical_alignment = 1
 autowrap_mode = 3
 clip_text = true
 
+[node name="moneyCon" type="HBoxContainer" parent="TR"]
+visible = false
+top_level = true
+layout_mode = 2
+offset_left = 10.0
+offset_top = 69.0
+offset_right = 299.0
+offset_bottom = 133.0
+size_flags_vertical = 0
+theme_override_constants/separation = 11
+
+[node name="mButton1" type="TextureButton" parent="TR/moneyCon"]
+layout_mode = 2
+texture_normal = SubResource("GradientTexture2D_q18rc")
+texture_pressed = SubResource("GradientTexture2D_8ojfd")
+
+[node name="mLabel" type="Label" parent="TR/moneyCon/mButton1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "money maker 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="mButton2" type="TextureButton" parent="TR/moneyCon"]
+layout_mode = 2
+size_flags_vertical = 0
+texture_normal = SubResource("GradientTexture2D_q18rc")
+texture_pressed = SubResource("GradientTexture2D_8ojfd")
+
+[node name="mLabel2" type="Label" parent="TR/moneyCon/mButton2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "money thing 2
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="mButton3" type="TextureButton" parent="TR/moneyCon"]
+layout_mode = 2
+size_flags_vertical = 0
+texture_normal = SubResource("GradientTexture2D_q18rc")
+texture_pressed = SubResource("GradientTexture2D_8ojfd")
+
+[node name="mLabel3" type="Label" parent="TR/moneyCon/mButton3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "money thing 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="mButton4" type="TextureButton" parent="TR/moneyCon"]
+layout_mode = 2
+size_flags_vertical = 0
+texture_normal = SubResource("GradientTexture2D_q18rc")
+texture_pressed = SubResource("GradientTexture2D_8ojfd")
+
+[node name="mLabel4" type="Label" parent="TR/moneyCon/mButton4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "four money thinbg
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
 [node name="trapsCon" type="HBoxContainer" parent="TR"]
 visible = false
 top_level = true
 layout_mode = 2
 offset_left = 10.0
-offset_top = 13.0
+offset_top = 69.0
 offset_right = 299.0
-offset_bottom = 77.0
+offset_bottom = 133.0
 size_flags_vertical = 0
 theme_override_constants/separation = 11
 
@@ -512,6 +601,7 @@ texture_normal = ExtResource("3_6fxfs")
 [connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
 [connection signal="pressed" from="TR/catsCon/towerB" to="." method="_on_tower_b_pressed"]
 [connection signal="pressed" from="TR/catsCon/spawnerB" to="." method="_on_spawner_b_pressed"]
+[connection signal="pressed" from="TR/catsCon/moneyB" to="." method="_on_money_b_pressed"]
 [connection signal="pressed" from="TR/catsCon/trapB" to="." method="_on_trap_b_pressed"]
 [connection signal="pressed" from="TR/towersCon/t1Button" to="." method="_on_t_1_button_pressed"]
 [connection signal="pressed" from="TR/towersCon/t2Button" to="." method="_on_t_2_button_pressed"]
@@ -521,6 +611,10 @@ texture_normal = ExtResource("3_6fxfs")
 [connection signal="pressed" from="TR/spawnersCon/sButton2" to="." method="_on_s_button_4_pressed"]
 [connection signal="pressed" from="TR/spawnersCon/s1Button3" to="." method="_on_s_1_button_pressed"]
 [connection signal="pressed" from="TR/spawnersCon/s2Button4" to="." method="_on_s_2_button_4_pressed"]
+[connection signal="pressed" from="TR/moneyCon/mButton1" to="." method="_on_m_button_1_pressed"]
+[connection signal="pressed" from="TR/moneyCon/mButton2" to="." method="_on_m_button_2_pressed"]
+[connection signal="pressed" from="TR/moneyCon/mButton3" to="." method="_on_m_button_3_pressed"]
+[connection signal="pressed" from="TR/moneyCon/mButton4" to="." method="_on_m_button_4_pressed"]
 [connection signal="pressed" from="TR/trapsCon/tr1Button" to="." method="_on_tr_1_button_pressed"]
 [connection signal="pressed" from="TR/trapsCon/tr2Button" to="." method="_on_tr_2_button_pressed"]
 [connection signal="pressed" from="TR/trapsCon/tr3Button3" to="." method="_on_tr_3_button_3_pressed"]

@@ -1,0 +1,117 @@
+[gd_scene load_steps=10 format=3 uid="uid://c01gfmot7bek0"]
+
+[ext_resource type="Texture2D" uid="uid://fh57ft0o0njr" path="res://Assets/Towers/money1.png" id="1_t2crv"]
+[ext_resource type="Script" path="res://Scripts/Tower_scripts/$s.gd" id="1_yqodi"]
+[ext_resource type="Script" path="res://Scenes/Components/HitboxCopmponent.gd" id="2_i8c1w"]
+[ext_resource type="Script" path="res://Scenes/Components/HealthComponent.gd" id="3_iao0v"]
+[ext_resource type="AudioStream" uid="uid://c0ldrc3cg3gpj" path="res://Sounds/mixkit-game-ball-tap-2073.wav" id="5_alkew"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5da1s"]
+size = Vector2(50, 50)
+
+[sub_resource type="Animation" id="Animation_tgu0u"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_0tkif"]
+resource_name = "click_add_money1"
+length = 0.07
+step = 0.002
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.002, 0.01, 0.02, 0.038, 0.07),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -2), Vector2(-2, -2), Vector2(-3, -2), Vector2(-3, -1), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0chni"]
+_data = {
+"RESET": SubResource("Animation_tgu0u"),
+"click_add_money1": SubResource("Animation_0tkif")
+}
+
+[node name="$" type="StaticBody2D"]
+collision_layer = 65536
+collision_mask = 0
+script = ExtResource("1_yqodi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_t2crv")
+
+[node name="money_label" type="Label" parent="Sprite2D"]
+offset_left = -56.0
+offset_top = 32.0
+offset_right = 119.0
+offset_bottom = 162.0
+scale = Vector2(0.17696, 0.17696)
+theme_override_font_sizes/font_size = 50
+text = "sp1sdf"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthComponent" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_iao0v")
+
+[node name="HitboxComponent" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+script = ExtResource("2_i8c1w")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+shape = SubResource("RectangleShape2D_5da1s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0chni")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_alkew")
+volume_db = 3.958
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]

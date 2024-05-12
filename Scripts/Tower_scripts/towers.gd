@@ -1,17 +1,11 @@
-extends Node2D
+extends tower_super_class
 
 class_name Tower
 
-var stats: towerStats = null
 
-@onready var health: int = stats.health
 @onready var fire_rate = stats.fire_rate
 @onready var bullet_speed = stats.bullet_speed
 
-func load_stats(t_stats: towerStats) -> void:
-	stats = t_stats
-
-var tile_position : Vector2
 var targets_in_range = {}
 
 # will need upgrade menu
@@ -24,7 +18,6 @@ func _ready():
 	#print("Health : %s" % health)
 	#print("firerate: %s" % fire_rate)
 	#print("bullet_speed: %s" % bullet_speed)
-	
 	#print(stats.health)
 	#queue_free()
 func _process(delta):
@@ -47,9 +40,5 @@ func _on_range_body_entered(body):
 	targets_in_range[body.name]= position.distance_to(body.position)
 
 
-func _on_tree_exiting():
-	var tile_map = get_parent().get_child(0).get_child(0)
-	# do above in a better way with get root, and not indexint
-	tile_map.set_cell(0, tile_position, 2, Vector2i(0,0))
 
 

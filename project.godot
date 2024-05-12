@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Clock="*res://Singletons/clock.tscn"
 SceneManager="*res://Singletons/scene_manager.gd"
 Global="*res://Singletons/Global.gd"
+Player1="*res://Singletons/player1.gd"
 
 [display]
 
@@ -30,6 +31,19 @@ window/stretch/mode="canvas_items"
 [dotnet]
 
 project/assembly_name="TDVersus"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Resources/": "green",
+"res://Scenes/": "blue",
+"res://Scripts/": "pink"
+}
 
 [filesystem]
 
@@ -56,5 +70,6 @@ click={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

@@ -1,10 +1,11 @@
-res://Scripts/Tower_scripts
-res://Scripts/UI_scripts
+res://Scenes/TestScenes
 res://Resources/Stats/Towers
+res://Scripts/Tower_scripts
+res://Singletons
+res://Scripts/UI_scripts
 res://Scripts
 res://Scenes/Components
 res://Scenes/Creatures
-res://Singletons
 res://Scenes/UI
 res://Resources/Themes/UI
 res://Scenes/MainScenes

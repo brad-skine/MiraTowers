@@ -1,2 +1,13 @@
-res://Scenes/UI/BuyMenu.tscn
+res://Scenes/Towers/$.tscn
+res://Scripts/Tower_scripts/tower1.gd
 res://Scenes/Maps/SandGround.tres
+res://Scenes/Creatures/meleeChar.tscn
+res://Scenes/Maps/map_2.tscn
+res://Singletons/scene_handler.tscn
+res://Scenes/MainScenes/gameplay.tscn
+res://Scenes/UI/BuyMenu.tscn
+res://Scenes/Creatures/firstCreature.tscn
+res://Scenes/Towers/spawner.tscn
+res://Scenes/TestScenes/testGameplay.tscn
+res://Scenes/Base/base.tscn
+res://Scripts/Tower_scripts/$s.gd

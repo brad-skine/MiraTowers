@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bradl\\GodotGames\\TDVersus.csproj": {}
+    "C:\\Users\\bradl\\GodotProjects\\MiraTowers\\MiraTowers\\TDVersus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bradl\\GodotGames\\TDVersus.csproj": {
+    "C:\\Users\\bradl\\GodotProjects\\MiraTowers\\MiraTowers\\TDVersus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bradl\\GodotGames\\TDVersus.csproj",
+        "projectUniqueName": "C:\\Users\\bradl\\GodotProjects\\MiraTowers\\MiraTowers\\TDVersus.csproj",
         "projectName": "TDVersus",
-        "projectPath": "C:\\Users\\bradl\\GodotGames\\TDVersus.csproj",
+        "projectPath": "C:\\Users\\bradl\\GodotProjects\\MiraTowers\\MiraTowers\\TDVersus.csproj",
         "packagesPath": "C:\\Users\\bradl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bradl\\GodotGames\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\bradl\\GodotProjects\\MiraTowers\\MiraTowers\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bradl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -40,15 +40,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             }
           },
           "imports": [

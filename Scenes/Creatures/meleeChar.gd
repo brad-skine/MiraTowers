@@ -1,11 +1,13 @@
 extends CharacterBody2D
 
-@export var speed : float = 150
+@export var speed : float = 149
 @export var health : int
 @export var target: Node2D
 @onready var nav_agent := $NavigationAgent2D as NavigationAgent2D
 @onready var update_nav_timer := $update_nav_timer
 @onready var melee_atack_cd := $meleeAttackTimer
+@onready var animation_player = $AnimationPlayer
+
 var target_aquired : bool = false
 var target_dead : bool = false
 var off_set_from_target : Vector2
@@ -13,6 +15,8 @@ var off_set_from_target : Vector2
 # will make it go towards center of target and stop when with a certain distance of contatnt with collsion
 
 func _ready():
+	animation_player.play("spawn_animation");
+	
 	if (target == null):
 		target_dead = true
 		update_nav_timer.stop()
@@ -22,11 +26,13 @@ func _ready():
 	col_shape =  target.get_node("HitboxComponent").get_child(0)
 	var extra = 120
 	var target_width = col_shape.shape.extents.x / 2 + extra
-	off_set_from_target = position.direction_to(target.position) * target_width
+	off_set_from_target = position.direction_to(target.position) * target_width / 2
+	print(off_set_from_target)
 	make_new_path()
 
 	
 func _physics_process(delta: float) -> void:
+	
 	if (target == null):
 		target_dead = true
 		update_nav_timer.stop()
@@ -40,7 +46,7 @@ func _physics_process(delta: float) -> void:
 	
 func make_new_path() -> void:
 	if(target != null):
-		nav_agent.target_position = target.global_position - off_set_from_target * 0
+		nav_agent.target_position = target.global_position - off_set_from_target
 	#if !nav_agent.is_target_reachable():
 		#print("target is not reachable for melee character")
 func _on_update_nav_timer_timeout():

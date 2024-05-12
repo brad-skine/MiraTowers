@@ -1,3 +1,4 @@
+money_stats
 trapStats
 spawnerStats
 towerStats

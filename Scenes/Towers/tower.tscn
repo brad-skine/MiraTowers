@@ -10,7 +10,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_c2obh"]
 radius = 160.0
 
-[node name="tower" type="Node2D"]
+[node name="tower" type="StaticBody2D"]
 z_index = 2
 position = Vector2(113, 60)
 rotation = -1.5708
@@ -65,4 +65,3 @@ polygon = PackedVector2Array(-19, -14.0001, -16.9999, -16.0001, -12.9999, -16.00
 
 [connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
 [connection signal="timeout" from="cd" to="." method="_on_cd_timeout"]
-[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]

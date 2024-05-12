@@ -4,7 +4,6 @@ class_name HealthComponent
 
 var health : float
 
-
 func _ready():
 	health = get_parent().health
 	

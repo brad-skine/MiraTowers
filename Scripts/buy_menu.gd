@@ -9,6 +9,9 @@ var cur_selection = "none";
 @onready var towersCon := $TR/towersCon
 @onready var spawnersCon := $TR/spawnersCon
 @onready var trapsCon := $TR/trapsCon
+@onready var money_con = $TR/moneyCon
+
+
 func tree_exiting():
 	pass
 	
@@ -19,7 +22,7 @@ func _on_label_ready():
 func _on_purchace_button_pressed():
 	cur_selection = "none"
 	
-	var tile_map = get_parent().get_child(0).get_child(0)
+	#tile_map = get_parent().get_child(0).get_child(0)
 	tile_map.set_cell(ground_layer, Global.new_tower_grid_num, 1, Vector2i(0,0))
 	var tile_data : TileData = tile_map.get_cell_tile_data(ground_layer, Global.new_tower_grid_num)
 	if (tile_data):
@@ -42,8 +45,10 @@ var spawners_information = {"header": "Spawners", "info": "Select what spawner y
 
 var traps_information =  {"header": "Traps", "info": "Select what trap you would like to purchase"}
 
+var money_maker_information =  {"header": "Money Makers", "info": "Select what $ maker you would like to purchase"}
+
 var information = {"spawners": spawners_information, "towers": towers_information,
-					"traps": traps_information}
+				  "$":  money_maker_information,	"traps": traps_information}
 	
 func load_new_tower(curent_selection: String, index: int) -> void:
 	var cur_sel = curent_selection + str(index)
@@ -64,6 +69,7 @@ func _on_t_3_button_3_pressed():
 	load_new_tower("tower", 3)
 func _on_t_3_button_4_pressed():
 	load_new_tower("tower", 4)
+	
 func _on_s_3_button_pressed():
 	load_new_tower("spawner", 1)
 func _on_s_button_4_pressed():
@@ -82,11 +88,21 @@ func _on_tr_3_button_3_pressed():
 func _on_tr_4_button_4_pressed():
 	load_new_tower("trap", 4)
 	
+func _on_m_button_1_pressed():
+	load_new_tower("$", 1)
+func _on_m_button_2_pressed():
+	load_new_tower("$", 2)
+func _on_m_button_3_pressed():
+	load_new_tower("$", 3)
+func _on_m_button_4_pressed():
+	load_new_tower("$", 4)
 	
 func _on_tower_b_pressed():
 	catagory_chosen("towers", towersCon)
 func _on_spawner_b_pressed():
 	catagory_chosen("spawners", spawnersCon)
+func _on_money_b_pressed():
+	catagory_chosen("$", money_con)
 func _on_trap_b_pressed():
 	catagory_chosen("traps", trapsCon)
 	
@@ -104,18 +120,30 @@ func _on_back_button_pressed():
 	elif cur_selection == "spawners":
 		_on_spawner_b_pressed()
 		cur_selection = "none"
+	elif cur_selection == "$":
+		_on_money_b_pressed()
+		cur_selection= "none"
 	elif cur_selection == "traps":
 		_on_trap_b_pressed()
 		cur_selection = "none"
-	elif towersCon.visible or spawnersCon.visible or trapsCon.visible :
-		$TR/towersCon.hide()
-		$TR/spawnersCon.hide()
+	elif towersCon.visible or spawnersCon.visible or trapsCon.visible or money_con.visible :
+		towersCon.hide()
+		spawnersCon.hide()
 		trapsCon.hide()
+		money_con.hide()
 		$TR/catsCon.show()
 		$TR/MC/VBC/Header.set_text("Catagory choose")
 		$TR/MC/VBC/Control/infoP.set_text("Select one of the catagorys above")
 	else:
 		print("load main menu")
+
+
+
+
+
+
+
+
 
 
 
