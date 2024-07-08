@@ -8,6 +8,9 @@ extends CharacterBody2D
 @onready var melee_atack_cd := $meleeAttackTimer
 @onready var animation_player = $AnimationPlayer
 
+@onready var animated_sprite_2d = $Sprite2D
+
+
 var target_aquired : bool = false
 var target_dead : bool = false
 var off_set_from_target : Vector2
@@ -15,6 +18,7 @@ var off_set_from_target : Vector2
 # will make it go towards center of target and stop when with a certain distance of contatnt with collsion
 
 func _ready():
+	animated_sprite_2d.play("default")
 	animation_player.play("spawn_animation");
 	
 	if (target == null):
@@ -34,13 +38,16 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	
 	if (target == null):
+		animated_sprite_2d.play("default")
 		target_dead = true
 		update_nav_timer.stop()
 		melee_atack_cd.stop()
 		return
 	elif not target_aquired:
+		animated_sprite_2d.play("running")
 		var dir = to_local(nav_agent.get_next_path_position()).normalized()
 		velocity = dir * speed
+		
 		move_and_slide()
 	
 	

@@ -1,9 +1,36 @@
-[gd_scene load_steps=11 format=3 uid="uid://wgi27q5eyhxu"]
+[gd_scene load_steps=15 format=3 uid="uid://wgi27q5eyhxu"]
 
 [ext_resource type="Script" path="res://Scenes/Creatures/meleeChar.gd" id="1_wb7x1"]
-[ext_resource type="Texture2D" uid="uid://d11o58w2w2kpu" path="res://icon.svg" id="2_fmfgr"]
+[ext_resource type="Texture2D" uid="uid://dxm6arbwwu2pg" path="res://Assets/0001.png" id="2_u5wce"]
 [ext_resource type="Script" path="res://Scenes/Components/HealthComponent.gd" id="3_fpxha"]
+[ext_resource type="Texture2D" uid="uid://c3j7q0dbl4jkv" path="res://Assets/0002.png" id="3_p2rg1"]
 [ext_resource type="Script" path="res://Scenes/Components/HitboxCopmponent.gd" id="4_a7scx"]
+[ext_resource type="Texture2D" uid="uid://ddilwmyy84qvs" path="res://Assets/0003.png" id="4_xvxdw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qr3eg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u5wce")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u5wce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_p2rg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xvxdw")
+}],
+"loop": true,
+"name": &"running",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wexy4"]
 size = Vector2(52, 52)
@@ -40,6 +67,9 @@ tracks/1/keys = {
 "values": [0.0]
 }
 
+[sub_resource type="Animation" id="Animation_ai5rs"]
+resource_name = "Running"
+
 [sub_resource type="Animation" id="Animation_igj3g"]
 resource_name = "spawn_animation"
 length = 0.3
@@ -72,6 +102,7 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_at81w"]
 _data = {
 "RESET": SubResource("Animation_b05xh"),
+"Running": SubResource("Animation_ai5rs"),
 "spawn_animation": SubResource("Animation_igj3g")
 }
 
@@ -85,13 +116,16 @@ script = ExtResource("1_wb7x1")
 speed = 147.0
 health = 500
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 modulate = Color(0.545098, 0.364706, 0.898039, 1)
-position = Vector2(2, 0)
+position = Vector2(2.5, 0.499998)
 scale = Vector2(1e-05, 0.4)
-texture = ExtResource("2_fmfgr")
+sprite_frames = SubResource("SpriteFrames_qr3eg")
+animation = &"running"
+frame_progress = 0.377475
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(2, 0)
 shape = SubResource("RectangleShape2D_wexy4")
 

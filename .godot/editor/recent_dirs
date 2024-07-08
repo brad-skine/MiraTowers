@@ -1,3 +1,8 @@
+res://
+res://Scripts/On_hit_effects
+res://Assets
+C:/Program Files/Blender Foundation/Blender 4.1
+res://Sounds
 res://Scenes/TestScenes
 res://Resources/Stats/Towers
 res://Scripts/Tower_scripts
@@ -11,9 +16,7 @@ res://Resources/Themes/UI
 res://Scenes/MainScenes
 res://Scenes/Towers
 res://Assets/Towers
-res://
 res://Scenes/Base
 res://Scenes/Maps
 res://Resources/Fonts
-C:/Users/bradl/GodotGames/Resources/Fonts
 res://Resources/Themes

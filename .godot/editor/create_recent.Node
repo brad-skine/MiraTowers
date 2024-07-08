@@ -1,7 +1,8 @@
+Label
+AnimatedSprite2D
 AnimationPlayer
 AudioStreamPlayer2D
 AudioStreamPlayer
-AnimatedSprite2D
 StaticBody2D
 CollisionShape2D
 Control
@@ -9,6 +10,5 @@ HitboxComponent
 Sprite2D
 Area2D
 CanvasLayer
-Label
 Timer
 HealthComponent

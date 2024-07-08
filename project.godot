@@ -45,10 +45,6 @@ folder_colors={
 "res://Scripts/": "pink"
 }
 
-[filesystem]
-
-import/blender/enabled=false
-
 [gui]
 
 theme/custom_font="res://Resources/Fonts/ProtestStrike-Regular.ttf"

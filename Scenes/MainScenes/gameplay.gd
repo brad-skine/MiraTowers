@@ -13,6 +13,6 @@ func _ready():
 	
 func _process(delta):
 	if not audio_stream_player_2d.playing:
-		audio_stream_player_2d.play()
+		animation_player.play("music_animation_test")
 		#animation_player.play("music_animation_test")
 

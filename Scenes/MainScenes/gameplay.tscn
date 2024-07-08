@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dbk7utikd7a01" path="res://Scenes/Creatures/firstCreature.tscn" id="5_410au"]
 [ext_resource type="PackedScene" uid="uid://wgi27q5eyhxu" path="res://Scenes/Creatures/meleeChar.tscn" id="6_siakv"]
 [ext_resource type="FontFile" uid="uid://bo1gip21mtifo" path="res://Resources/Fonts/KennyFonts/Kenney Future.ttf" id="7_i8iom"]
-[ext_resource type="AudioStream" uid="uid://ctu2q8v3r8v16" path="res://Sounds/mixkit-game-level-music-689 (online-audio-converter.com).mp3" id="8_t2wto"]
+[ext_resource type="AudioStream" uid="uid://cuk0be8e8rlvm" path="res://Sounds/Background Music/bongo-and-drum-instrumental-music-21295 (online-audio-converter.com).wav" id="8_l56rj"]
 
 [sub_resource type="Animation" id="Animation_yerh6"]
 length = 0.001
@@ -22,6 +22,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_gvajx"]
@@ -39,7 +51,19 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 6, 12, 18, 24, 30),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [1.0, 0.9, 1.0, 1.1, 1.0, 0.92]
+"values": [1.0, 0.7, 1.0, 1.1, 1.0, 0.92]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fp06s"]
@@ -116,10 +140,11 @@ theme_override_font_sizes/font_size = 75
 text = "0"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_t2wto")
-autoplay = true
+stream = ExtResource("8_l56rj")
+volume_db = -20.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+active = false
 libraries = {
 "": SubResource("AnimationLibrary_fp06s")
 }
