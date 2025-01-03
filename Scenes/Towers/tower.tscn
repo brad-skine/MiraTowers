@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b48n202vc50ph"]
+[gd_scene load_steps=9 format=3 uid="uid://b48n202vc50ph"]
 
 [ext_resource type="Script" path="res://Scripts/Tower_scripts/tower1.gd" id="1_gj8su"]
 [ext_resource type="Texture2D" uid="uid://cthdntsiffr02" path="res://Assets/Towers/tankStuff/tankBody_sand.png" id="2_ixuxm"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://Scenes/Components/HealthComponent.gd" id="5_ei5ro"]
 [ext_resource type="Script" path="res://Scenes/Components/HitboxCopmponent.gd" id="6_tw8u4"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_470rc"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_c2obh"]
 radius = 160.0
 
@@ -14,6 +16,7 @@ radius = 160.0
 z_index = 2
 position = Vector2(113, 60)
 rotation = -1.5708
+physics_material_override = SubResource("PhysicsMaterial_470rc")
 script = ExtResource("1_gj8su")
 
 [node name="sP" type="Control" parent="."]

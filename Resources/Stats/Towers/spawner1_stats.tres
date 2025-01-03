@@ -7,4 +7,3 @@
 script = ExtResource("1_xphrd")
 health = 100
 spawned_unit = ExtResource("2_gqucq")
-money_per_click = 0

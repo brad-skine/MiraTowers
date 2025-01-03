@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="towerStats" load_steps=2 format=3 uid="uid://coahfty7pmx3a"]
+[gd_resource type="Resource" script_class="towerStats" load_steps=3 format=3 uid="uid://coahfty7pmx3a"]
 
 [ext_resource type="Script" path="res://Scripts/Tower_scripts/towerStats.gd" id="1_we5fo"]
+[ext_resource type="Texture2D" uid="uid://cf21y71m0oeqi" path="res://Assets/Towers/untitled.png" id="2_nc4hw"]
 
 [resource]
 script = ExtResource("1_we5fo")
 health = 100
 fire_rate = 10.0
 bullet_speed = 300
+sprite = ExtResource("2_nc4hw")
 info = {
 0: {
 "header": "Towers",

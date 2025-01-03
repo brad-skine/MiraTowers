@@ -1,194 +1,196 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720438194
-icon.svg::CompressedTexture2D::9038751187503057746::1707378976::1707378984::1::::<><>::
-README.md::TextFile::-1::1714298647::0::1::::<><>::
-::res://addons/::1714565637
-::res://addons/Todo_Manager/::1720438194
-ColourPicker.gd::GDScript::-1::1714565637::0::1::::<>HBoxContainer<>::
-Current.gd::GDScript::-1::1714565637::0::1::::<>Panel<>::
-Dock.gd::GDScript::-1::1714565637::0::1::::<>Control<>::
-Pattern.gd::GDScript::-1::1714565638::0::1::::<>HBoxContainer<>::
-plugin.cfg::TextFile::-1::1714565638::0::1::::<><>::
-plugin.gd::GDScript::-1::1714565638::0::1::::<>EditorPlugin<>::
-Project.gd::GDScript::-1::1714565638::0::1::::<>Panel<>::
-todo.cfg::TextFile::-1::1720438194::0::1::::<><>::
-todoItem_class.gd::GDScript::-1::1714565638::0::1::::<>RefCounted<>::
-todo_class.gd::GDScript::-1::1714565638::0::1::::<>RefCounted<>::
-::res://addons/Todo_Manager/doc/::1714595349
-::res://addons/Todo_Manager/doc/images/::1714595271
-example1.png::CompressedTexture2D::8063086250666186557::1714565638::1714565638::1::::<><>::
-Instruct1.png::CompressedTexture2D::3235431904368586669::1714565638::1714565638::1::::<><>::
-Instruct2.png::CompressedTexture2D::7748160999021403261::1714565638::1714565638::1::::<><>::
-Instruct3.png::CompressedTexture2D::768537126963573006::1714565638::1714565638::1::::<><>::
-Instruct4.png::CompressedTexture2D::4296662697018743033::1714565638::1714565638::1::::<><>::
-Instruct5.png::CompressedTexture2D::2375306755221670743::1714565638::1714565638::1::::<><>::
-TODO_Manager_Logo.png::CompressedTexture2D::787591301152919599::1714565638::1714565638::1::::<><>::
-::res://addons/Todo_Manager/UI/::1714565638
-ColourPicker.tscn::PackedScene::2957809393656723737::1714565638::0::1::::<><>::res://addons/Todo_Manager/ColourPicker.gd
-Dock.tscn::PackedScene::4584442902745049483::1714565638::0::1::::<><>::res://addons/Todo_Manager/Dock.gd<>res://addons/Todo_Manager/Project.gd<>res://addons/Todo_Manager/Current.gd
-Pattern.tscn::PackedScene::4056048923411208166::1714565638::0::1::::<><>::res://addons/Todo_Manager/Pattern.gd
-::res://Assets/::1715839813
-0001.png::CompressedTexture2D::8800261110050079088::1715839783::1715839813::1::::<><>::
-0002.png::CompressedTexture2D::6758681223288104581::1715839783::1715839813::1::::<><>::
-0003.png::CompressedTexture2D::7387051446903433364::1715839783::1715839813::1::::<><>::
-stickman.glb::PackedScene::1101025331786834273::1715839229::1715839234::1::::<><>::
-::res://Assets/Bases/::1707561778
-treeBrown_twigs.png::CompressedTexture2D::6841775356605290043::1707561756::1707561778::1::::<><>::
-::res://Assets/Projectiles/::1707683176
-bulletBlue2_outline.png::CompressedTexture2D::5959731836571391547::1707683176::1707683176::1::::<><>::
-bulletBlue3_outline.png::CompressedTexture2D::3914816425359310591::1707683176::1707683176::1::::<><>::
-bulletDark2_outline.png::CompressedTexture2D::7671598668830001831::1707683176::1707683176::1::::<><>::
-::res://Assets/Projectiles/tank/::1707683148
-::res://Assets/TileSets/::1713186118
-basic2.png::CompressedTexture2D::5214463616271597555::1712737711::1712737714::1::::<><>::
-basic.png::CompressedTexture2D::4310226210927684812::1707601719::1707601729::1::::<><>::
-GreyHoverBasic.png::CompressedTexture2D::6687694539041682031::1713186110::1713186118::1::::<><>::
-spritesheet_tiles.png::CompressedTexture2D::8522797747317049355::1707380908::1707438062::1::::<><>::
-terrainTiles_default.png::CompressedTexture2D::3901563039553091384::1707380899::1707438061::1::::<><>::
-towerDefense_tilesheet.png::CompressedTexture2D::7552059329352036613::1707380881::1707438061::1::::<><>::
-::res://Assets/Towers/::1714558827
-money1.png::CompressedTexture2D::367273810780157823::1714558824::1714558827::1::::<><>::
-::res://Assets/Towers/tankStuff/::1712133305
-tankBlue_barrel1.png::CompressedTexture2D::8134227213806224251::1707682823::1707682852::1::::<><>::
-tankBlue_barrel2.png::CompressedTexture2D::7114280667209711375::1707682823::1707682852::1::::<><>::
-tankBlue_barrel3.png::CompressedTexture2D::3335715834263526412::1707682823::1707682852::1::::<><>::
-tankBody_blue.png::CompressedTexture2D::5398657220124308226::1707682962::1707682962::1::::<><>::
-tankBody_dark.png::CompressedTexture2D::6493441596499275374::1707682823::1707682852::1::::<><>::
-tankBody_red.png::CompressedTexture2D::1968021693486460240::1707682823::1707682852::1::::<><>::
-tankBody_sand.png::CompressedTexture2D::6121086433206813225::1707682823::1707682852::1::::<><>::
-tankRed_barrel1.png::CompressedTexture2D::2878237606623351955::1707682823::1707682852::1::::<><>::
-tankRed_barrel1_outline.png::CompressedTexture2D::4678006409807235824::1707682823::1707682852::1::::<><>::
-tankRed_barrel2.png::CompressedTexture2D::1244979251260749903::1707682823::1707682852::1::::<><>::
-tankSand_barrel1.png::CompressedTexture2D::3616186018981218931::1707682823::1707682852::1::::<><>::
-tankSand_barrel1_outline.png::CompressedTexture2D::1459864876640235324::1707682823::1707682852::1::::<><>::
-tankSand_barrel2.png::CompressedTexture2D::3732369271161897966::1707682823::1707682852::1::::<><>::
-tankSand_barrel3.png::CompressedTexture2D::3157707268786413432::1707682823::1707682852::1::::<><>::
-::res://Assets/Towers/tankStuff/Projectiles/::1712133305
-bulletBlue2_outline.png::CompressedTexture2D::5959731836571391547::1712133253::1712133305::1::::<><>::
-bulletBlue3_outline.png::CompressedTexture2D::3914816425359310591::1712133253::1712133305::1::::<><>::
-bulletDark2_outline.png::CompressedTexture2D::7671598668830001831::1712133253::1712133305::1::::<><>::
-::res://Assets/Traps/::1712894649
-spikes0.png::CompressedTexture2D::3579912170377591688::1712894642::1712894649::1::::<><>::
-::res://Credits/::1714595068
-CONTRIBUTING.md::TextFile::-1::1714565637::0::1::::<><>::
-KennyFonts.txt::TextFile::-1::1707522670::0::1::::<><>::
-OFL.txt::TextFile::-1::1707521900::0::1::::<><>::
-READMECN.md::TextFile::-1::1714565637::0::1::::<><>::
-::res://Resources/::1712639545
-::res://Resources/Fonts/::1707522684
-ProtestStrike-Regular.ttf::FontFile::6140675458712077951::1707521900::1707521936::1::::<><>::
-::res://Resources/Fonts/KennyFonts/::1707522681
-Kenney Blocks.ttf::FontFile::312837117504355306::1707522670::1707522681::1::::<><>::
-Kenney Future Narrow.ttf::FontFile::8564447405708167388::1707522670::1707522681::1::::<><>::
-Kenney Future.ttf::FontFile::3423117735297031216::1707522670::1707522681::1::::<><>::
-Kenney High Square.ttf::FontFile::4544702734124821035::1707522670::1707522681::1::::<><>::
-Kenney High.ttf::FontFile::3290245523884702301::1707522670::1707522681::1::::<><>::
-Kenney Mini Square Mono.ttf::FontFile::4067600279981340842::1707522670::1707522681::1::::<><>::
-Kenney Mini Square.ttf::FontFile::2888541258546472091::1707522670::1707522681::1::::<><>::
-Kenney Mini.ttf::FontFile::4670931552618733999::1707522670::1707522681::1::::<><>::
-Kenney Pixel Square.ttf::FontFile::5308052577947123929::1707522670::1707522681::1::::<><>::
-Kenney Pixel.ttf::FontFile::3394720975094477268::1707522670::1707522681::1::::<><>::
-Kenney Rocket Square.ttf::FontFile::17673509568175750::1707522670::1707522681::1::::<><>::
-Kenney Rocket.ttf::FontFile::4802142250579868521::1707522670::1707522681::1::::<><>::
-::res://Resources/Stats/::1712639554
-::res://Resources/Stats/Towers/::1714734516
-$1_stats.tres::Resource/Resource::5952957761213255423::1714734516::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
-$2_stats.tres::Resource/Resource::7193937076112752378::1714734516::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
-$3_stats.tres::Resource/Resource::4604115502707990808::1714734516::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
-$4_stats.tres::Resource/Resource::2676704661034702215::1714734516::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
-spawner1_stats.tres::Resource/Resource::5931896297041755321::1714734479::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn
-spawner2_stats.tres::Resource/Resource::4456056070570843668::1712893228::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn
-spawner3_stats.tres::Resource/Resource::1697462357059794422::1714559603::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn
-spawner4_stats.tres::Resource/Resource::8345007746804024524::1714559603::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn
-tower1_stats.tres::Resource/Resource::5755920162730981732::1712970918::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd
-tower2_stats.tres::Resource/Resource::1894830623060859777::1712970918::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd
-tower3_stats.tres::Resource/Resource::345761696565128105::1714734493::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd
-tower4_stats.tres::Resource/Resource::399592593719406436::1712970918::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd
-trap1_stats.tres::Resource/Resource::6145499256535162005::1712912003::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
-trap2_stats.tres::Resource/Resource::7200217369343513131::1712911353::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
-trap3_stats.tres::Resource/Resource::6423777424616365692::1712911353::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
-trap4_stats.tres::Resource/Resource::7767841369342104446::1712911338::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
-::res://Resources/Themes/::1707512712
-::res://Resources/Themes/UI/::1707722576
-bRadius.tres::StyleBoxFlat::442503347396989658::1707524031::0::1::::<><>::
-::res://Scenes/::1714649732
-::res://Scenes/Base/::1715925240
-base.tscn::PackedScene::1940516663810670307::1715925240::0::1::::<><>::res://Scripts/base.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf<>uid://cpdmfhea8y23o::::res://Scenes/Components/health_component.tscn<>uid://dq3wetdek6h5r::::res://Scenes/Components/hitbox_copmponent.tscn
-::res://Scenes/Components/::1714559126
-HealthComponent.gd::GDScript::-1::1714559126::0::1::::HealthComponent<>Control<>::
-health_component.tscn::PackedScene::5832605061989332482::1712704989::0::1::::<><>::res://Scenes/Components/HealthComponent.gd
-HitboxCopmponent.gd::GDScript::-1::1712798777::0::1::::HitboxComponent<>Area2D<>::
-hitbox_copmponent.tscn::PackedScene::8341430046192375425::1712535404::0::1::::<><>::res://Scenes/Components/HitboxCopmponent.gd
-::res://Scenes/Creatures/::1715925240
-firstCreature.tscn::PackedScene::7252074342666267996::1715925240::0::1::::<><>::res://Scripts/firstCreature.gd<>uid://d11o58w2w2kpu::::res://icon.svg
-meleeChar.gd::GDScript::-1::1715841283::0::1::::<>CharacterBody2D<>::
-meleeChar.tscn::PackedScene::1557076485772070526::1715925240::0::1::::<><>::res://Scenes/Creatures/meleeChar.gd<>uid://dxm6arbwwu2pg::::res://Assets/0001.png<>res://Scenes/Components/HealthComponent.gd<>uid://c3j7q0dbl4jkv::::res://Assets/0002.png<>res://Scenes/Components/HitboxCopmponent.gd<>uid://ddilwmyy84qvs::::res://Assets/0003.png
-::res://Scenes/MainScenes/::1715925240
-gameplay.gd::GDScript::-1::1715499838::0::1::::<>Node2D<>::
-gameplay.tscn::PackedScene::8241761041693626319::1715925240::0::1::::<><>::res://Scenes/MainScenes/gameplay.gd<>uid://cx3lrhhsism6j::::res://Scenes/Maps/map_2.tscn<>uid://1atx3s73r4gt::::res://Scenes/UI/gameplay_menu.tscn<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn<>uid://bo1gip21mtifo::::res://Resources/Fonts/KennyFonts/Kenney Future.ttf<>uid://cuk0be8e8rlvm::::res://Sounds/Background Music/bongo-and-drum-instrumental-music-21295 (online-audio-converter.com).wav
-::res://Scenes/Maps/::1715925240
-map_1.tscn::PackedScene::2033631523108284620::1710051132::0::1::::<><>::uid://dtgalkj8bfujd::::res://Scenes/Maps/SandGround.tres<>uid://bvt7f5i4ovtf1::::res://Assets/TileSets/terrainTiles_default.png<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn
-map_2.tscn::PackedScene::6445685972897767655::1715925240::0::1::::<><>::res://Scripts/map_2.gd<>uid://dtgalkj8bfujd::::res://Scenes/Maps/SandGround.tres
-SandGround.tres::TileSet::8505256531096897437::1715923524::0::1::::<><>::uid://b2n52ceq0foki::::res://Assets/TileSets/basic.png<>uid://bvt7f5i4ovtf1::::res://Assets/TileSets/terrainTiles_default.png<>uid://braevo02p1521::::res://Assets/Traps/spikes0.png<>uid://cgj6poy1cdin8::::res://Assets/TileSets/basic2.png<>uid://c2jtl748aqrvb::::res://Assets/TileSets/GreyHoverBasic.png
-::res://Scenes/TestScenes/::1715925240
-test.tscn::PackedScene::7746540257733079336::1715428919::0::1::::<><>::res://Scenes/MainScenes/gameplay.gd<>uid://cx3lrhhsism6j::::res://Scenes/Maps/map_2.tscn<>uid://1atx3s73r4gt::::res://Scenes/UI/gameplay_menu.tscn<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn<>uid://bo1gip21mtifo::::res://Resources/Fonts/KennyFonts/Kenney Future.ttf<>uid://c01gfmot7bek0::::res://Scenes/Towers/$.tscn
-testGameplay.tscn::PackedScene::3469599407045751677::1715925240::0::1::::<><>::res://Scenes/MainScenes/gameplay.gd<>uid://cx3lrhhsism6j::::res://Scenes/Maps/map_2.tscn<>uid://1atx3s73r4gt::::res://Scenes/UI/gameplay_menu.tscn<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn<>uid://bo1gip21mtifo::::res://Resources/Fonts/KennyFonts/Kenney Future.ttf
-::res://Scenes/Towers/::1715925240
-$.tscn::PackedScene::6581610163682232805::1715925240::0::1::::<><>::uid://fh57ft0o0njr::::res://Assets/Towers/money1.png<>res://Scripts/Tower_scripts/$s.gd<>res://Scenes/Components/HitboxCopmponent.gd<>res://Scenes/Components/HealthComponent.gd<>uid://c0ldrc3cg3gpj::::res://Sounds/mixkit-game-ball-tap-2073.wav
-spawner2.gd::GDScript::-1::1712656426::0::1::::<>Spawner<>::
-spawner2.tscn::PackedScene::4029914107821239943::1715428919::0::1::::<><>::res://Scenes/Towers/spawner2.gd<>res://Scenes/Components/HitboxCopmponent.gd<>res://Scenes/Components/HealthComponent.gd
-spawner.tscn::PackedScene::2329432639645264094::1715925240::0::1::::<><>::res://Scripts/Tower_scripts/spawners.gd<>res://Scenes/Components/HitboxCopmponent.gd<>res://Scenes/Components/HealthComponent.gd
-tower2.tscn::PackedScene::1695516697724560527::1712704989::0::1::::<><>::uid://ci6fdit5ipqnq::::res://Assets/Towers/tankStuff/tankBody_blue.png<>res://Scripts/Tower_scripts/tower2.gd<>uid://c8mhfsvuxe63l::::res://Assets/Towers/tankStuff/tankBlue_barrel2.png<>res://Scripts/Tower_scripts/Range.gd<>uid://cpdmfhea8y23o::::res://Scenes/Components/health_component.tscn<>res://Scenes/Components/HitboxCopmponent.gd
-tower.tscn::PackedScene::4490860508172906969::1715428919::0::1::::<><>::res://Scripts/Tower_scripts/tower1.gd<>uid://cthdntsiffr02::::res://Assets/Towers/tankStuff/tankBody_sand.png<>uid://btf8tuskb6el7::::res://Assets/Towers/tankStuff/tankSand_barrel2.png<>res://Scripts/Tower_scripts/Range.gd<>res://Scenes/Components/HealthComponent.gd<>res://Scenes/Components/HitboxCopmponent.gd
-trap.tscn::PackedScene::911255225259085373::1715423950::0::1::::<><>::res://Scripts/Tower_scripts/traps.gd<>uid://braevo02p1521::::res://Assets/Traps/spikes0.png
-::res://Scenes/Towers/Projectiles/::1715925241
-proj_basic.tscn::PackedScene::1443342776294788758::1715925241::0::1::::<><>::res://Scripts/Tower_scripts/proj_basic.gd<>uid://cq566a8v1qcjb::::res://Assets/Towers/tankStuff/Projectiles/bulletBlue2_outline.png
-::res://Scenes/UI/::1715925240
-baseUpgradeMenu.tscn::PackedScene::8408317614028016766::1714301970::0::1::::<><>::uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
-BuyMenu.tscn::PackedScene::543427504836761477::1715925240::0::1::::<><>::res://Scripts/buy_menu.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf<>uid://d11o58w2w2kpu::::res://icon.svg
-clock.gd::GDScript::-1::1712132930::0::1::::<>Node<>::
-gameplay_menu.tscn::PackedScene::1826106130663553819::1714301970::0::1::::<><>::
-HoverScript.gd::GDScript::-1::1714301481::0::1::::GridHoverScript<>Control<>::
-start_menu.tscn::PackedScene::591618358436655194::1709871816::0::1::::<><>::res://Scripts/start_menu.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
-tUpgradeMenu.tscn::PackedScene::8350894801072164403::1714300191::0::1::::<><>::uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf<>res://Scripts/UI_scripts/tUpgradeMenu.gd
-::res://Scripts/::1715923627
-Attack.gd::GDScript::-1::1712229659::0::1::::Attack<>RefCounted<>::
-base.gd::GDScript::-1::1715431138::0::1::::Basee<>Node2D<>::
-buy_menu.gd::GDScript::-1::1714565500::0::1::::<>GridHoverScript<>::
-firstCreature.gd::GDScript::-1::1712794498::0::1::::<>CharacterBody2D<>::
-map_2.gd::GDScript::-1::1713186232::0::1::::<>Node2D<>::
-start_menu.gd::GDScript::-1::1712108483::0::1::::<>Control<>::
-::res://Scripts/On_hit_effects/::1715925241
-damadge_number_animation.gd::GDScript::-1::1715924457::0::1::::ShowDamage<>Node2D<>::
-damadge_number_animation.tscn::PackedScene::6587142856750335543::1715925241::0::1::::<><>::res://Scripts/On_hit_effects/damadge_number_animation.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
-::res://Scripts/Tower_scripts/::1715924796
-$s.gd::GDScript::-1::1715499017::0::1::::<>tower_super_class<>::
-$stats.gd::GDScript::-1::1714734516::0::1::::money_stats<>Resource<>::
-proj_basic.gd::GDScript::-1::1715924796::0::1::::<>CharacterBody2D<>::
-Range.gd::GDScript::-1::1712380730::0::1::::<>Area2D<>::
-spawner1.gd::GDScript::-1::1712891984::0::1::::<>Spawner<>::
-spawners.gd::GDScript::-1::1715428233::0::1::::Spawner<>tower_super_class<>::
-spawner_stats.gd::GDScript::-1::1714734494::0::1::::spawnerStats<>Resource<>::
-tower1.gd::GDScript::-1::1715923524::0::1::::<>Tower<>::
-tower2.gd::GDScript::-1::1712622389::0::1::::<>Tower<>::
-towers.gd::GDScript::-1::1714565234::0::1::::Tower<>tower_super_class<>::
-towerStats.gd::GDScript::-1::1712665248::0::1::::towerStats<>Resource<>::
-tower_super_script.gd::GDScript::-1::1714649663::0::1::::tower_super_class<>PhysicsBody2D<>::
-traps.gd::GDScript::-1::1715423948::0::1::::<>Area2D<>::
-trap_stats.gd::GDScript::-1::1712911610::0::1::::trapStats<>Resource<>::
-::res://Scripts/UI_scripts/::1713186639
-tUpgradeMenu.gd::GDScript::-1::1713186639::0::1::::<>GridHoverScript<>::
-::res://Singletons/::1715925240
-clock.tscn::PackedScene::6938736811085677927::1712134900::0::1::::<><>::res://Scenes/UI/clock.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
-Global.gd::GDScript::-1::1714301995::0::1::::<>Node<>::
-player1.gd::GDScript::-1::1714735107::0::1::::<>Node<>::
-scene_handler.tscn::PackedScene::7954195183173473570::1715925240::0::1::::<><>::uid://iot4rk8872yo::::res://Scenes/UI/start_menu.tscn
-scene_manager.gd::GDScript::-1::1714300707::0::1::::<>Node<>::
-::res://Sounds/::1715500184
-level-up-bonus-sequence-2-186891.mp3::AudioStreamMP3::7477577125749598185::1715432363::1715499658::1::::<><>::
-mixkit-casino-bling-achievement-2067.wav::AudioStreamWAV::98267774272109832::1715430854::1715431015::1::::<><>::
-mixkit-extra-bonus-in-a-video-game-2045 (online-audio-converter.com).wav::AudioStreamWAV::7975327709618050252::1715499289::1715500143::1::::<><>::
-mixkit-game-ball-tap-2073.wav::AudioStreamWAV::6550483271507572639::1715430876::1715500162::1::::<><>::
-::res://Sounds/Background Music/::1715500184
-bongo-and-drum-instrumental-music-21295 (online-audio-converter.com).wav::AudioStreamWAV::6198781989598982746::1715500007::1715500184::1::::<><>::
-mixkit-game-level-music-689 (online-audio-converter.com).wav::AudioStreamWAV::2607095210136615869::1715499598::1715500040::1::::<><>::
+::res://::1735890565
+icon.svg::CompressedTexture2D::9038751187503057746::1707382576::1707382584::1::::<><>::
+README.md::TextFile::-1::1714302247::0::1::::<><>::
+::res://addons/::1714569237
+::res://addons/Todo_Manager/::1735890565
+ColourPicker.gd::GDScript::-1::1714569237::0::1::::<>HBoxContainer<>::
+Current.gd::GDScript::-1::1714569237::0::1::::<>Panel<>::
+Dock.gd::GDScript::-1::1714569237::0::1::::<>Control<>::
+Pattern.gd::GDScript::-1::1714569238::0::1::::<>HBoxContainer<>::
+plugin.cfg::TextFile::-1::1714569238::0::1::::<><>::
+plugin.gd::GDScript::-1::1714569238::0::1::::<>EditorPlugin<>::
+Project.gd::GDScript::-1::1714569238::0::1::::<>Panel<>::
+todo.cfg::TextFile::-1::1735890565::0::1::::<><>::
+todoItem_class.gd::GDScript::-1::1714569238::0::1::::<>RefCounted<>::
+todo_class.gd::GDScript::-1::1714569238::0::1::::<>RefCounted<>::
+::res://addons/Todo_Manager/doc/::1714598949
+::res://addons/Todo_Manager/doc/images/::1714598871
+example1.png::CompressedTexture2D::8063086250666186557::1714569238::1714569238::1::::<><>::
+Instruct1.png::CompressedTexture2D::3235431904368586669::1714569238::1714569238::1::::<><>::
+Instruct2.png::CompressedTexture2D::7748160999021403261::1714569238::1714569238::1::::<><>::
+Instruct3.png::CompressedTexture2D::768537126963573006::1714569238::1714569238::1::::<><>::
+Instruct4.png::CompressedTexture2D::4296662697018743033::1714569238::1714569238::1::::<><>::
+Instruct5.png::CompressedTexture2D::2375306755221670743::1714569238::1714569238::1::::<><>::
+TODO_Manager_Logo.png::CompressedTexture2D::787591301152919599::1714569238::1714569238::1::::<><>::
+::res://addons/Todo_Manager/UI/::1714569238
+ColourPicker.tscn::PackedScene::2957809393656723737::1714569238::0::1::::<><>::res://addons/Todo_Manager/ColourPicker.gd
+Dock.tscn::PackedScene::4584442902745049483::1714569238::0::1::::<><>::res://addons/Todo_Manager/Dock.gd<>res://addons/Todo_Manager/Project.gd<>res://addons/Todo_Manager/Current.gd
+Pattern.tscn::PackedScene::4056048923411208166::1714569238::0::1::::<><>::res://addons/Todo_Manager/Pattern.gd
+::res://Assets/::1715843413
+0001.png::CompressedTexture2D::8800261110050079088::1715843383::1715843413::1::::<><>::
+0002.png::CompressedTexture2D::6758681223288104581::1715843383::1715843413::1::::<><>::
+0003.png::CompressedTexture2D::7387051446903433364::1715843383::1715843413::1::::<><>::
+stickman.glb::PackedScene::1101025331786834273::1715842829::1715842834::1::::<><>::
+::res://Assets/Bases/::1707565378
+treeBrown_twigs.png::CompressedTexture2D::6841775356605290043::1707565356::1707565378::1::::<><>::
+::res://Assets/Projectiles/::1707686776
+bulletBlue2_outline.png::CompressedTexture2D::5959731836571391547::1707686776::1707686776::1::::<><>::
+bulletBlue3_outline.png::CompressedTexture2D::3914816425359310591::1707686776::1707686776::1::::<><>::
+bulletDark2_outline.png::CompressedTexture2D::7671598668830001831::1707686776::1707686776::1::::<><>::
+::res://Assets/Projectiles/tank/::1707686748
+::res://Assets/TileSets/::1713189718
+basic2.png::CompressedTexture2D::5214463616271597555::1712741311::1712741314::1::::<><>::
+basic.png::CompressedTexture2D::4310226210927684812::1707605319::1707605329::1::::<><>::
+GreyHoverBasic.png::CompressedTexture2D::6687694539041682031::1713189710::1713189718::1::::<><>::
+spritesheet_tiles.png::CompressedTexture2D::8522797747317049355::1707384508::1707441662::1::::<><>::
+terrainTiles_default.png::CompressedTexture2D::3901563039553091384::1707384499::1707441661::1::::<><>::
+towerDefense_tilesheet.png::CompressedTexture2D::7552059329352036613::1707384481::1707441661::1::::<><>::
+::res://Assets/Towers/::1720692730
+money1.png::CompressedTexture2D::367273810780157823::1714562424::1714562427::1::::<><>::
+tower1Idle.png::CompressedTexture2D::2218510820376732700::1720692422::1720692440::1::::<><>::
+untitled.png::CompressedTexture2D::5181147007292931896::1720692728::1720692730::1::::<><>::
+::res://Assets/Towers/tankStuff/::1712136905
+tankBlue_barrel1.png::CompressedTexture2D::8134227213806224251::1707686423::1707686452::1::::<><>::
+tankBlue_barrel2.png::CompressedTexture2D::7114280667209711375::1707686423::1707686452::1::::<><>::
+tankBlue_barrel3.png::CompressedTexture2D::3335715834263526412::1707686423::1707686452::1::::<><>::
+tankBody_blue.png::CompressedTexture2D::5398657220124308226::1707686562::1707686562::1::::<><>::
+tankBody_dark.png::CompressedTexture2D::6493441596499275374::1707686423::1707686452::1::::<><>::
+tankBody_red.png::CompressedTexture2D::1968021693486460240::1707686423::1707686452::1::::<><>::
+tankBody_sand.png::CompressedTexture2D::6121086433206813225::1707686423::1707686452::1::::<><>::
+tankRed_barrel1.png::CompressedTexture2D::2878237606623351955::1707686423::1707686452::1::::<><>::
+tankRed_barrel1_outline.png::CompressedTexture2D::4678006409807235824::1707686423::1707686452::1::::<><>::
+tankRed_barrel2.png::CompressedTexture2D::1244979251260749903::1707686423::1707686452::1::::<><>::
+tankSand_barrel1.png::CompressedTexture2D::3616186018981218931::1707686423::1707686452::1::::<><>::
+tankSand_barrel1_outline.png::CompressedTexture2D::1459864876640235324::1707686423::1707686452::1::::<><>::
+tankSand_barrel2.png::CompressedTexture2D::3732369271161897966::1707686423::1707686452::1::::<><>::
+tankSand_barrel3.png::CompressedTexture2D::3157707268786413432::1707686423::1707686452::1::::<><>::
+::res://Assets/Towers/tankStuff/Projectiles/::1712136905
+bulletBlue2_outline.png::CompressedTexture2D::5959731836571391547::1712136853::1712136905::1::::<><>::
+bulletBlue3_outline.png::CompressedTexture2D::3914816425359310591::1712136853::1712136905::1::::<><>::
+bulletDark2_outline.png::CompressedTexture2D::7671598668830001831::1712136853::1712136905::1::::<><>::
+::res://Assets/Traps/::1712898249
+spikes0.png::CompressedTexture2D::3579912170377591688::1712898242::1712898249::1::::<><>::
+::res://Credits/::1714598668
+CONTRIBUTING.md::TextFile::-1::1714569237::0::1::::<><>::
+KennyFonts.txt::TextFile::-1::1707526270::0::1::::<><>::
+OFL.txt::TextFile::-1::1707525500::0::1::::<><>::
+READMECN.md::TextFile::-1::1714569237::0::1::::<><>::
+::res://Resources/::1712643145
+::res://Resources/Fonts/::1707526284
+ProtestStrike-Regular.ttf::FontFile::6140675458712077951::1707525500::1707525536::1::::<><>::
+::res://Resources/Fonts/KennyFonts/::1707526281
+Kenney Blocks.ttf::FontFile::312837117504355306::1707526270::1707526281::1::::<><>::
+Kenney Future Narrow.ttf::FontFile::8564447405708167388::1707526270::1707526281::1::::<><>::
+Kenney Future.ttf::FontFile::3423117735297031216::1707526270::1707526281::1::::<><>::
+Kenney High Square.ttf::FontFile::4544702734124821035::1707526270::1707526281::1::::<><>::
+Kenney High.ttf::FontFile::3290245523884702301::1707526270::1707526281::1::::<><>::
+Kenney Mini Square Mono.ttf::FontFile::4067600279981340842::1707526270::1707526281::1::::<><>::
+Kenney Mini Square.ttf::FontFile::2888541258546472091::1707526270::1707526281::1::::<><>::
+Kenney Mini.ttf::FontFile::4670931552618733999::1707526270::1707526281::1::::<><>::
+Kenney Pixel Square.ttf::FontFile::5308052577947123929::1707526270::1707526281::1::::<><>::
+Kenney Pixel.ttf::FontFile::3394720975094477268::1707526270::1707526281::1::::<><>::
+Kenney Rocket Square.ttf::FontFile::17673509568175750::1707526270::1707526281::1::::<><>::
+Kenney Rocket.ttf::FontFile::4802142250579868521::1707526270::1707526281::1::::<><>::
+::res://Resources/Stats/::1712643154
+::res://Resources/Stats/Towers/::1720696201
+$1_stats.tres::Resource/money_stats::5952957761213255423::1714738116::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
+$2_stats.tres::Resource/money_stats::7193937076112752378::1714738116::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
+$3_stats.tres::Resource/money_stats::4604115502707990808::1714738116::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
+$4_stats.tres::Resource/money_stats::2676704661034702215::1714738116::0::1::::<><>::res://Scripts/Tower_scripts/$stats.gd
+spawner1_stats.tres::Resource/spawnerStats::5931896297041755321::1720696201::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn
+spawner2_stats.tres::Resource/spawnerStats::4456056070570843668::1712896828::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn
+spawner3_stats.tres::Resource/spawnerStats::1697462357059794422::1714563203::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn
+spawner4_stats.tres::Resource/spawnerStats::8345007746804024524::1720696201::0::1::::<><>::res://Scripts/Tower_scripts/spawner_stats.gd<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn
+tower1_stats.tres::Resource/towerStats::5755920162730981732::1720692754::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd<>uid://cf21y71m0oeqi::::res://Assets/Towers/untitled.png
+tower2_stats.tres::Resource/towerStats::1894830623060859777::1712974518::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd
+tower3_stats.tres::Resource/towerStats::345761696565128105::1720690725::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd
+tower4_stats.tres::Resource/towerStats::399592593719406436::1712974518::0::1::::<><>::res://Scripts/Tower_scripts/towerStats.gd
+trap1_stats.tres::Resource/trapStats::6145499256535162005::1712915603::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
+trap2_stats.tres::Resource/trapStats::7200217369343513131::1712914953::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
+trap3_stats.tres::Resource/trapStats::6423777424616365692::1712914953::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
+trap4_stats.tres::Resource/trapStats::7767841369342104446::1712914938::0::1::::<><>::res://Scripts/Tower_scripts/trap_stats.gd
+::res://Resources/Themes/::1707516312
+::res://Resources/Themes/UI/::1707726176
+bRadius.tres::StyleBoxFlat::442503347396989658::1707527631::0::1::::<><>::
+::res://Scenes/::1714653332
+::res://Scenes/Base/::1720697414
+base.tscn::PackedScene::1940516663810670307::1720697414::0::1::::<><>::res://Scripts/base.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf<>uid://cpdmfhea8y23o::::res://Scenes/Components/health_component.tscn<>uid://dq3wetdek6h5r::::res://Scenes/Components/hitbox_copmponent.tscn
+::res://Scenes/Components/::1714562726
+HealthComponent.gd::GDScript::-1::1714562726::0::1::::HealthComponent<>Control<>::
+health_component.tscn::PackedScene::5832605061989332482::1712708589::0::1::::<><>::res://Scenes/Components/HealthComponent.gd
+HitboxCopmponent.gd::GDScript::-1::1712802377::0::1::::HitboxComponent<>Area2D<>::
+hitbox_copmponent.tscn::PackedScene::8341430046192375425::1712539004::0::1::::<><>::res://Scenes/Components/HitboxCopmponent.gd
+::res://Scenes/Creatures/::1720697414
+firstCreature.tscn::PackedScene::7252074342666267996::1720697413::0::1::::<><>::res://Scripts/firstCreature.gd<>uid://d11o58w2w2kpu::::res://icon.svg
+meleeChar.gd::GDScript::-1::1715844883::0::1::::<>CharacterBody2D<>::
+meleeChar.tscn::PackedScene::1557076485772070526::1720697414::0::1::::<><>::res://Scenes/Creatures/meleeChar.gd<>uid://dxm6arbwwu2pg::::res://Assets/0001.png<>res://Scenes/Components/HealthComponent.gd<>uid://c3j7q0dbl4jkv::::res://Assets/0002.png<>res://Scenes/Components/HitboxCopmponent.gd<>uid://ddilwmyy84qvs::::res://Assets/0003.png
+::res://Scenes/MainScenes/::1720697413
+gameplay.gd::GDScript::-1::1715503438::0::1::::<>Node2D<>::
+gameplay.tscn::PackedScene::8241761041693626319::1720697413::0::1::::<><>::res://Scenes/MainScenes/gameplay.gd<>uid://cx3lrhhsism6j::::res://Scenes/Maps/map_2.tscn<>uid://1atx3s73r4gt::::res://Scenes/UI/gameplay_menu.tscn<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn<>uid://bo1gip21mtifo::::res://Resources/Fonts/KennyFonts/Kenney Future.ttf<>uid://cuk0be8e8rlvm::::res://Sounds/Background Music/bongo-and-drum-instrumental-music-21295 (online-audio-converter.com).wav
+::res://Scenes/Maps/::1720697413
+map_1.tscn::PackedScene::2033631523108284620::1710054732::0::1::::<><>::uid://dtgalkj8bfujd::::res://Scenes/Maps/SandGround.tres<>uid://bvt7f5i4ovtf1::::res://Assets/TileSets/terrainTiles_default.png<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn
+map_2.tscn::PackedScene::6445685972897767655::1720697413::0::1::::<><>::res://Scripts/map_2.gd<>uid://dtgalkj8bfujd::::res://Scenes/Maps/SandGround.tres
+SandGround.tres::TileSet::8505256531096897437::1720691434::0::1::::<><>::uid://b2n52ceq0foki::::res://Assets/TileSets/basic.png<>uid://bvt7f5i4ovtf1::::res://Assets/TileSets/terrainTiles_default.png<>uid://braevo02p1521::::res://Assets/Traps/spikes0.png<>uid://cgj6poy1cdin8::::res://Assets/TileSets/basic2.png<>uid://c2jtl748aqrvb::::res://Assets/TileSets/GreyHoverBasic.png
+::res://Scenes/TestScenes/::1720697414
+test.tscn::PackedScene::7746540257733079336::1715432519::0::1::::<><>::res://Scenes/MainScenes/gameplay.gd<>uid://cx3lrhhsism6j::::res://Scenes/Maps/map_2.tscn<>uid://1atx3s73r4gt::::res://Scenes/UI/gameplay_menu.tscn<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn<>uid://bo1gip21mtifo::::res://Resources/Fonts/KennyFonts/Kenney Future.ttf<>uid://c01gfmot7bek0::::res://Scenes/Towers/$.tscn
+testGameplay.tscn::PackedScene::3469599407045751677::1720697414::0::1::::<><>::res://Scenes/MainScenes/gameplay.gd<>uid://cx3lrhhsism6j::::res://Scenes/Maps/map_2.tscn<>uid://1atx3s73r4gt::::res://Scenes/UI/gameplay_menu.tscn<>uid://2waa48spw4cl::::res://Scenes/Base/base.tscn<>uid://dbk7utikd7a01::::res://Scenes/Creatures/firstCreature.tscn<>uid://wgi27q5eyhxu::::res://Scenes/Creatures/meleeChar.tscn<>uid://bo1gip21mtifo::::res://Resources/Fonts/KennyFonts/Kenney Future.ttf
+::res://Scenes/Towers/::1720697414
+$.tscn::PackedScene::6581610163682232805::1720697413::0::1::::<><>::uid://fh57ft0o0njr::::res://Assets/Towers/money1.png<>res://Scripts/Tower_scripts/$s.gd<>res://Scenes/Components/HitboxCopmponent.gd<>res://Scenes/Components/HealthComponent.gd<>uid://c0ldrc3cg3gpj::::res://Sounds/mixkit-game-ball-tap-2073.wav
+spawner2.gd::GDScript::-1::1712660026::0::1::::<>Spawner<>::
+spawner2.tscn::PackedScene::4029914107821239943::1720697414::0::1::::<><>::res://Scenes/Towers/spawner2.gd<>res://Scenes/Components/HitboxCopmponent.gd<>res://Scenes/Components/HealthComponent.gd
+spawner.tscn::PackedScene::2329432639645264094::1720697413::0::1::::<><>::res://Scripts/Tower_scripts/spawners.gd<>res://Scenes/Components/HitboxCopmponent.gd<>res://Scenes/Components/HealthComponent.gd
+tower2.tscn::PackedScene::1695516697724560527::1712708589::0::1::::<><>::uid://ci6fdit5ipqnq::::res://Assets/Towers/tankStuff/tankBody_blue.png<>res://Scripts/Tower_scripts/tower2.gd<>uid://c8mhfsvuxe63l::::res://Assets/Towers/tankStuff/tankBlue_barrel2.png<>res://Scripts/Tower_scripts/Range.gd<>uid://cpdmfhea8y23o::::res://Scenes/Components/health_component.tscn<>res://Scenes/Components/HitboxCopmponent.gd
+tower.tscn::PackedScene::4490860508172906969::1720697414::0::1::::<><>::res://Scripts/Tower_scripts/tower1.gd<>uid://cthdntsiffr02::::res://Assets/Towers/tankStuff/tankBody_sand.png<>uid://btf8tuskb6el7::::res://Assets/Towers/tankStuff/tankSand_barrel2.png<>res://Scripts/Tower_scripts/Range.gd<>res://Scenes/Components/HealthComponent.gd<>res://Scenes/Components/HitboxCopmponent.gd
+trap.tscn::PackedScene::911255225259085373::1715427550::0::1::::<><>::res://Scripts/Tower_scripts/traps.gd<>uid://braevo02p1521::::res://Assets/Traps/spikes0.png
+::res://Scenes/Towers/Projectiles/::1720697414
+proj_basic.tscn::PackedScene::1443342776294788758::1720697414::0::1::::<><>::res://Scripts/Tower_scripts/proj_basic.gd<>uid://cq566a8v1qcjb::::res://Assets/Towers/tankStuff/Projectiles/bulletBlue2_outline.png
+::res://Scenes/UI/::1720697413
+baseUpgradeMenu.tscn::PackedScene::8408317614028016766::1714305570::0::1::::<><>::uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
+BuyMenu.tscn::PackedScene::543427504836761477::1720697413::0::1::::<><>::res://Scripts/buy_menu.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf<>uid://d11o58w2w2kpu::::res://icon.svg
+clock.gd::GDScript::-1::1712136530::0::1::::<>Node<>::
+gameplay_menu.tscn::PackedScene::1826106130663553819::1714305570::0::1::::<><>::
+HoverScript.gd::GDScript::-1::1714305081::0::1::::GridHoverScript<>Control<>::
+start_menu.tscn::PackedScene::591618358436655194::1709875416::0::1::::<><>::res://Scripts/start_menu.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
+tUpgradeMenu.tscn::PackedScene::8350894801072164403::1714303791::0::1::::<><>::uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf<>res://Scripts/UI_scripts/tUpgradeMenu.gd
+::res://Scripts/::1715927227
+Attack.gd::GDScript::-1::1712233259::0::1::::Attack<>RefCounted<>::
+base.gd::GDScript::-1::1715434738::0::1::::Basee<>Node2D<>::
+buy_menu.gd::GDScript::-1::1714569100::0::1::::<>GridHoverScript<>::
+firstCreature.gd::GDScript::-1::1712798098::0::1::::<>CharacterBody2D<>::
+map_2.gd::GDScript::-1::1713189832::0::1::::<>Node2D<>::
+start_menu.gd::GDScript::-1::1712112083::0::1::::<>Control<>::
+::res://Scripts/On_hit_effects/::1720697414
+damadge_number_animation.gd::GDScript::-1::1715928057::0::1::::ShowDamage<>Node2D<>::
+damadge_number_animation.tscn::PackedScene::6587142856750335543::1720697414::0::1::::<><>::res://Scripts/On_hit_effects/damadge_number_animation.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
+::res://Scripts/Tower_scripts/::1720696694
+$s.gd::GDScript::-1::1715502617::0::1::::<>tower_super_class<>::
+$stats.gd::GDScript::-1::1714738116::0::1::::money_stats<>Resource<>::
+proj_basic.gd::GDScript::-1::1715928396::0::1::::<>CharacterBody2D<>::
+Range.gd::GDScript::-1::1712384330::0::1::::<>Area2D<>::
+spawner1.gd::GDScript::-1::1712895584::0::1::::<>Spawner<>::
+spawners.gd::GDScript::-1::1715431833::0::1::::Spawner<>tower_super_class<>::
+spawner_stats.gd::GDScript::-1::1714738094::0::1::::spawnerStats<>Resource<>::
+tower1.gd::GDScript::-1::1720691434::0::1::::<>Tower<>::
+tower2.gd::GDScript::-1::1712625989::0::1::::<>Tower<>::
+towers.gd::GDScript::-1::1720696694::0::1::::Tower<>tower_super_class<>::
+towerStats.gd::GDScript::-1::1720691704::0::1::::towerStats<>Resource<>::
+tower_super_script.gd::GDScript::-1::1714653263::0::1::::tower_super_class<>PhysicsBody2D<>::
+traps.gd::GDScript::-1::1715427548::0::1::::<>Area2D<>::
+trap_stats.gd::GDScript::-1::1712915210::0::1::::trapStats<>Resource<>::
+::res://Scripts/UI_scripts/::1713190239
+tUpgradeMenu.gd::GDScript::-1::1713190239::0::1::::<>GridHoverScript<>::
+::res://Singletons/::1720697413
+clock.tscn::PackedScene::6938736811085677927::1712138500::0::1::::<><>::res://Scenes/UI/clock.gd<>uid://ctqua67n08lmd::::res://Resources/Fonts/ProtestStrike-Regular.ttf
+Global.gd::GDScript::-1::1714305595::0::1::::<>Node<>::
+player1.gd::GDScript::-1::1714738707::0::1::::<>Node<>::
+scene_handler.tscn::PackedScene::7954195183173473570::1720697413::0::1::::<><>::uid://iot4rk8872yo::::res://Scenes/UI/start_menu.tscn
+scene_manager.gd::GDScript::-1::1714304307::0::1::::<>Node<>::
+::res://Sounds/::1715503784
+level-up-bonus-sequence-2-186891.mp3::AudioStreamMP3::7477577125749598185::1715435963::1715503258::1::::<><>::
+mixkit-casino-bling-achievement-2067.wav::AudioStreamWAV::98267774272109832::1715434454::1715434615::1::::<><>::
+mixkit-extra-bonus-in-a-video-game-2045 (online-audio-converter.com).wav::AudioStreamWAV::7975327709618050252::1715502889::1715503743::1::::<><>::
+mixkit-game-ball-tap-2073.wav::AudioStreamWAV::6550483271507572639::1715434476::1715503762::1::::<><>::
+::res://Sounds/Background Music/::1715503784
+bongo-and-drum-instrumental-music-21295 (online-audio-converter.com).wav::AudioStreamWAV::6198781989598982746::1715503607::1715503784::1::::<><>::
+mixkit-game-level-music-689 (online-audio-converter.com).wav::AudioStreamWAV::2607095210136615869::1715503198::1715503640::1::::<><>::

@@ -2,9 +2,12 @@ extends Resource
 
 class_name towerStats
 
+
+
 @export var health  : int
 @export var fire_rate : float
 @export var bullet_speed : int
+@export var sprite : Texture2D
 
 @export var info = { # will move into a seperate recaouse as this makes absolutoy no sense repeated alot
 	0: {"header": "Towers", "info": "select what tower you would like to purchase" },

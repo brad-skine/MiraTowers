@@ -1,7 +1,7 @@
-res://Scenes/Creatures/meleeChar.tscn
-res://Scripts/Tower_scripts/tower1.gd
-res://Scenes/Maps/SandGround.tres
 res://Scenes/Maps/map_2.tscn
+res://Scripts/Tower_scripts/tower1.gd
+res://Scripts/Tower_scripts/towerStats.gd
+res://Scenes/Maps/SandGround.tres
 res://Singletons/scene_handler.tscn
 res://Scenes/MainScenes/gameplay.tscn
 res://Scenes/UI/BuyMenu.tscn
@@ -12,3 +12,6 @@ res://Scenes/TestScenes/testGameplay.tscn
 res://Scenes/Base/base.tscn
 res://Scripts/On_hit_effects/damadge_number_animation.tscn
 res://Scenes/Towers/Projectiles/proj_basic.tscn
+res://Scenes/Towers/tower.tscn
+res://Scenes/Creatures/meleeChar.tscn
+res://Scenes/Towers/spawner2.tscn
