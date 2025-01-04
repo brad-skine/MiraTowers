@@ -2,8 +2,9 @@ extends Resource
 
 class_name spawnerStats
 
-@export var health  : int
 
+@export var tower_cost: float = 50
+@export var health  : int
 @export var spawned_unit : PackedScene
 
 

@@ -4,6 +4,7 @@ class_name tower_super_class
 var stats: Resource = null
 var tile_position : Vector2
 var health : int
+
 func _ready():
 	if (stats != null):
 		health = stats.health

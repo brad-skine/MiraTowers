@@ -2,6 +2,7 @@ extends Resource
 
 class_name money_stats
 
+@export var tower_cost: float = 150
 @export var health  : int = 1
 @export var money_per_click : int
 

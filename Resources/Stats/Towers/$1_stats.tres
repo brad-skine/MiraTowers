@@ -4,5 +4,6 @@
 
 [resource]
 script = ExtResource("1_07ryo")
+tower_cost = 100.0
 health = 100
 money_per_click = 1
