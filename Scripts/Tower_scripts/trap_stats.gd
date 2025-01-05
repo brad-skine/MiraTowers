@@ -2,7 +2,7 @@ extends Resource
 
 class_name trapStats
 
-@export var tower_cost: float = 50
+@export var cost: float = 50
 @export var damage  : int
 
 

@@ -5,6 +5,7 @@ extends GridHoverScript
 var can_Upgrade_custom_data = "CanUpgrade"
 var ground_layer = 0;
 var cur_selection = "none";
+@onready var price_tag = $"TR/MC/VBC/Purchace Button/PriceTag"
 
 @onready var towersCon := $TR/towersCon
 @onready var spawnersCon := $TR/spawnersCon
@@ -21,7 +22,7 @@ func _on_label_ready():
 	
 func _on_purchace_button_pressed():
 	cur_selection = "none"
-	
+	Player1.decrease_money(stats_selected.cost) #Todo
 	#tile_map = get_parent().get_child(0).get_child(0)
 	tile_map.set_cell(ground_layer, Global.new_tower_grid_num, 1, Vector2i(0,0))
 	var tile_data : TileData = tile_map.get_cell_tile_data(ground_layer, Global.new_tower_grid_num)
@@ -51,9 +52,11 @@ var information = {"spawners": spawners_information, "towers": towers_informatio
 				  "$":  money_maker_information,	"traps": traps_information}
 	
 func load_new_tower(curent_selection: String, index: int) -> void:
+
 	var cur_sel = curent_selection + str(index)
 	tower_selected = load("res://Scenes/Towers/" + curent_selection + ".tscn")
 	stats_selected = load("res://Resources/Stats/Towers/" +cur_sel + "_stats.tres")
+	price_tag.set_text(str(stats_selected.cost))
 	var texts = stats_selected.info
 	$"TR/MC/VBC/Purchace Button".show()
 	$TR/MC/VBC/Header.set_text(texts[index]["header"])

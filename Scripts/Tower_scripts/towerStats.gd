@@ -3,7 +3,7 @@ extends Resource
 class_name towerStats
 
 
-@export var tower_cost: float = 50
+@export var cost: float = 50
 @export var health  : int
 @export var fire_rate : float
 @export var bullet_speed : int
