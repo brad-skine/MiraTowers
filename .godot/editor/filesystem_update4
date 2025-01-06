@@ -31,3 +31,4 @@ res://Resources/Stats/Towers/trap1_stats.tres
 res://Resources/Stats/Towers/spawner1_stats.tres
 res://Scenes/Towers/tower2.tscn
 res://Scripts/buy_menu.gd
+res://Scenes/MainScenes/gameplay.gd

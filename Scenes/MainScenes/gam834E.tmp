@@ -149,4 +149,4 @@ libraries = {
 "": SubResource("AnimationLibrary_fp06s")
 }
 
-[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
+[connection signal="child_entered_tree" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_child_entered_tree"]

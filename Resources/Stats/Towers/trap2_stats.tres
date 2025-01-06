@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource("1_288ow")
-tower_cost = 50.0
+cost = 50.0
 damage = 100
