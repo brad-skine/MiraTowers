@@ -139,4 +139,14 @@ health_component = NodePath("../HealthComponent")
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_jhp06")
 
+[node name="player_name" type="Label" parent="."]
+visible = false
+offset_left = 19.0
+offset_top = -98.0
+offset_right = 141.0
+offset_bottom = 56.0
+scale = Vector2(0.467329, 0.469926)
+theme_override_font_sizes/font_size = 128
+text = "P1"
+
 [connection signal="pressed" from="Sprite2D/Upgrade Button" to="." method="_on_upgrade_button_pressed"]

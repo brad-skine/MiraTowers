@@ -7,7 +7,6 @@ extends tower_super_class
 @onready var animation_player = $AnimationPlayer
 @onready var audio_stream_player = $AudioStreamPlayer
 
-# TODO: Make so can acually get money
 
 func _ready():
 	money_label.set_text(str(stats.money_per_click))

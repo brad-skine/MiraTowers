@@ -1,11 +1,14 @@
 extends Node
 
+@onready var money : int = Global.startingMoney
+var mult : int = 1
+var money_label : Label
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func increase_money(amount: int) -> void:
+	money += amount * mult
+	update_money_text()
+func decrease_money(amount: int) -> void:
+	money -= amount
+	update_money_text()
+func update_money_text() -> void:
+	money_label.set_text(str(money))

@@ -21,6 +21,7 @@ Clock="*res://Singletons/clock.tscn"
 SceneManager="*res://Singletons/scene_manager.gd"
 Global="*res://Singletons/Global.gd"
 Player1="*res://Singletons/player1.gd"
+Player2="*res://player_2.gd"
 
 [display]
 

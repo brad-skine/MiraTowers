@@ -13,7 +13,7 @@ func pause_play_clock():
 	
 func show_clock():
 	$Label.show()
-	
+
 func hide_clock():
 	$Label.hide()
 

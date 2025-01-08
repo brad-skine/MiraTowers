@@ -33,3 +33,9 @@ res://Scenes/Towers/tower2.tscn
 res://Scripts/buy_menu.gd
 res://Scenes/MainScenes/gameplay.gd
 res://Scripts/firstCreature.gd
+res://Singletons/player_2.gd
+res://Singletons/Global.gd
+res://Singletons/clock.tscn
+res://Scenes/UI/clock.gd
+res://Scripts/Tower_scripts/tower2.gd
+res://Scripts/base.gd
