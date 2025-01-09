@@ -99,6 +99,8 @@ offset_bottom = 40.0
 script = ExtResource("3_iao0v")
 
 [node name="HitboxComponent" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 6
+collision_mask = 0
 script = ExtResource("2_i8c1w")
 health_component = NodePath("../HealthComponent")
 

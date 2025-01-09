@@ -7,18 +7,21 @@ class_name Spawner
 @onready var sp := $tSprite/sP
 @onready var spawn_timer := $spawnTimer
 
+@onready var health_component = $HealthComponent
 
 func _ready():
-	health_label.set_text(str(health))
+	print(stats.health)
+	print("starting health", health)
+	health_label.set_text(str(stats.health))
 	
 func _on_tree_exiting():
-	print("test")
-	
+	print("exiting tree spawner")
 
 func update_health(new_health: int):
 	health_label.set_text(str(new_health));
 	health = new_health
 	print(new_health)
+	
 	if health <= 0:
 		queue_free()
 

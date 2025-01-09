@@ -39,3 +39,6 @@ res://Singletons/clock.tscn
 res://Scenes/UI/clock.gd
 res://Scripts/Tower_scripts/tower2.gd
 res://Scripts/base.gd
+res://Scenes/Towers/trap.tscn
+res://Scripts/Tower_scripts/spawners.gd
+res://Scenes/Components/HealthComponent.gd

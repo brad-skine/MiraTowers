@@ -33,7 +33,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wexy4"]
-size = Vector2(52, 52)
+size = Vector2(32, 54)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_stke2"]
 
@@ -118,14 +118,13 @@ health = 500
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 modulate = Color(0.545098, 0.364706, 0.898039, 1)
-position = Vector2(2, 0.499998)
+position = Vector2(0.999999, 1)
 scale = Vector2(1e-05, 0.4)
 sprite_frames = SubResource("SpriteFrames_qr3eg")
-animation = &"running"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(2, 0)
+position = Vector2(4, 1)
+scale = Vector2(1, 1.34653)
 shape = SubResource("RectangleShape2D_wexy4")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]

@@ -7,7 +7,9 @@ var health : float
 func _ready():
 	health = get_parent().health
 	
-func damage(attack: Attack):
+func get_health():
+	return health
+func damage(attack: Attack):  #TODO: make health label work
 	var parent = get_parent()
 	health = parent.health
 	health -= attack.attack_damadge
