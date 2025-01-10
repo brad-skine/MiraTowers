@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TDVersus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63b9c5f557020cc386d8b6a65f846d4a3bd6826a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a31775ae812055417ea88717e4702357b11ca06")]
 [assembly: System.Reflection.AssemblyProductAttribute("TDVersus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TDVersus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

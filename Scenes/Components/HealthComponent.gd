@@ -15,6 +15,7 @@ func damage(attack: Attack):  #TODO: make health label work
 	health -= attack.attack_damadge
 	if (parent.has_method("update_health")):
 		parent.update_health(health)
+	
 	else:
 		if health <= 0:
 			parent.queue_free()

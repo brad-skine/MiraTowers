@@ -14,8 +14,8 @@ func _ready():
 	print("starting health", health)
 	health_label.set_text(str(stats.health))
 	
-func _on_tree_exiting():
-	print("exiting tree spawner")
+#func _on_tree_exiting():
+	#print("exiting tree spawner")
 
 func update_health(new_health: int):
 	health_label.set_text(str(new_health));
