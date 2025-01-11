@@ -1,3 +1,5 @@
+Control
+Container
 Label
 RichTextLabel
 AnimatedSprite2D
@@ -6,9 +8,7 @@ AudioStreamPlayer2D
 AudioStreamPlayer
 StaticBody2D
 CollisionShape2D
-Control
 HitboxComponent
 Sprite2D
 Area2D
 CanvasLayer
-Timer

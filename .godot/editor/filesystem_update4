@@ -42,3 +42,6 @@ res://Scripts/base.gd
 res://Scenes/Towers/trap.tscn
 res://Scripts/Tower_scripts/spawners.gd
 res://Scenes/Components/HealthComponent.gd
+res://Scripts/Tower_scripts/towers.gd
+res://Scripts/On_hit_effects/damadge_number_animation.gd
+res://Scenes/UI/baseUpgradeMenu.tscn

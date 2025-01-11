@@ -16,6 +16,10 @@ var PROJECTILE_SCENE = preload("res://Scenes/Towers/Projectiles/proj_basic.tscn"
 @onready var tower = $"."
 
 func _ready():
+	
+	if Global.player_active == "player2":
+
+		rotate(PI)
 	cd.wait_time = 1.0 / fire_rate
 	#if stats.sprite:
 		#t_sprite.texture = stats.sprite

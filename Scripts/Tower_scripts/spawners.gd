@@ -10,8 +10,7 @@ class_name Spawner
 @onready var health_component = $HealthComponent
 
 func _ready():
-	print(stats.health)
-	print("starting health", health)
+
 	health_label.set_text(str(stats.health))
 	
 #func _on_tree_exiting():
@@ -20,7 +19,7 @@ func _ready():
 func update_health(new_health: int):
 	health_label.set_text(str(new_health));
 	health = new_health
-	print(new_health)
+
 	
 	if health <= 0:
 		queue_free()

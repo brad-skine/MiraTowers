@@ -8,7 +8,6 @@ var elapsed_time : float = 0.0  # Time counter
 
 
 func _ready():
-	print("ready damage number")
 	visible = false  # Hide the label initially
 # This function will be called to show damage
 func show_damage(attack: Attack):

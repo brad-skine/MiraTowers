@@ -1,3 +1,4 @@
+res://Singletons
 res://
 res://Scripts/On_hit_effects
 res://Assets
@@ -6,7 +7,6 @@ res://Sounds
 res://Scenes/TestScenes
 res://Resources/Stats/Towers
 res://Scripts/Tower_scripts
-res://Singletons
 res://Scripts/UI_scripts
 res://Scripts
 res://Scenes/Components

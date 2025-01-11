@@ -50,13 +50,13 @@ collision_mask = 8
 monitorable = false
 script = ExtResource("1_ku5pr")
 
+[node name="Spikes0" type="Sprite2D" parent="."]
+texture = ExtResource("1_qbrn2")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 scale = Vector2(0.914, 1)
 shape = SubResource("RectangleShape2D_n024p")
-
-[node name="Spikes0" type="Sprite2D" parent="."]
-texture = ExtResource("1_qbrn2")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -18.0

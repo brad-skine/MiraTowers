@@ -58,6 +58,33 @@ func load_new_tower(curent_selection: String, index: int) -> void:
 	stats_selected = load("res://Resources/Stats/Towers/" +cur_sel + "_stats.tres")
 	price_tag.set_text(str(stats_selected.cost))
 	var texts = stats_selected.info
+
+
+	#TODO : Make it show tower that you are purchasing's sprite
+		
+	var tower_instance = tower_selected.instantiate()
+	if tower_instance:
+		var tower_sprite : Sprite2D
+
+		for child in tower_instance.get_children():
+			if child is Sprite2D:
+				tower_sprite = child.duplicate()
+				break
+
+		if tower_sprite:
+			
+			get_parent().add_child(tower_sprite)
+			tower_sprite.position  = Global.new_tower_coords
+
+			tower_sprite.show()
+			#get_tree().root.add_child(tower_sprite)
+		
+			print("buy menu adding sprite")
+		else:
+			print("Error: No Sprite2D node found in the tower scene.")
+	else:
+		print("Error: Failed to instance the tower scene.")
+		
 	$"TR/MC/VBC/Purchace Button".show()
 	$TR/MC/VBC/Header.set_text(texts[index]["header"])
 	$TR/MC/VBC/Control/infoP.set_text(texts[index]["info"])

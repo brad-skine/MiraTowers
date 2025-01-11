@@ -27,16 +27,16 @@ func _physics_process(delta):
 
 func _on_upgrade_button_pressed():
 	if(SceneManager.current_ui_scene != UPGRADE_MENU):
-		print("upgrade menu pressed")
+
 		SceneManager.changeUi("res://Scenes/UI/baseUpgradeMenu.tscn")
 	
 #func _input(_event: InputEvent):
 	#if Input.is_action_just_pressed("click"):
-		#print("upgrade menu pressed")
+	
 		#SceneManager.changeUi("res://Scenes/UI/buyMenu.tscn")
 
 func damage(attack: Attack):
-	#print("hi")
+
 	health -= attack.attack_damadge
 	
 func update_health(new_health: int):
